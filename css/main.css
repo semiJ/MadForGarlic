@@ -34,15 +34,7 @@ html {
         transform: translateY(-50%);
     }
 
-    header .mainlogo02 {
-        opacity: 0;
-    }
-
-    header .sublogo01 {
-        opacity: 0;
-    }
-
-    header .sublogo02 {
+    header .sublogo {
         opacity: 0;
     }
 
@@ -81,11 +73,11 @@ html {
         background-color: var(--madColor02);
     }
 
-    header:hover .mainlogo01 {
+    header:hover .mainlogo {
         opacity: 0;
     }
 
-    header:hover .sublogo01 {
+    header:hover .sublogo {
         opacity: 1;
     }
 
@@ -125,12 +117,33 @@ html {
 
     /* scroll 영역 */
 
-    header .mainlogo01.on {
+    header.on {
+        background-color: var(--madColor02);
+    }
+
+    header.on .mainlogo {
+        opacity: 0;
+    }
+
+    header.on .sublogo {
+        opacity: 1;
+    }
+
+    header.on .headerMenu {
+        color: var(--medColor01);
+    }
+
+    header.on .mainUser {
         display: none;
     }
 
-    header .mainlogo02.on {
+    header.on .subUser {
         display: block;
+        color: var(--medColor01);
+    }
+
+    header .headerMenu a.on {
+        color: var(--madColor06);
     }
 
     /* /scroll 영역 */
