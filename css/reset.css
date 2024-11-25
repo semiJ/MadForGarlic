@@ -1,0 +1,58 @@
+/* reset */
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+ul,
+li,
+dl,
+dd,
+dt,
+ol {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+h2, h3, h4 {
+    font-family:'DNFForgedBlade';font-style:normal;font-weight:700;
+}
+
+dd, ul, dt, ol, div {
+    font-family:'DNFForgedBlade';font-style:normal;font-weight:500;
+}
+p, span {
+    font-family:'DNFForgedBlade';font-style:normal;font-weight:300;
+}
+
+html {
+    width: 100%;
+}
+
+/* 보이지 않아도 되는 글자들 <span 또는 h2>숨기기 */
+html .h_hide {
+    display: none;
+}
+
+/* 던파 연단된 칼날체 */
+@font-face{
+    font-family:'DNFForgedBlade';font-style:normal;font-weight:300;
+    src:url('//cdn.df.nexon.com/img/common/font/DNFForgedBlade-Light.otf')format('opentype')
+}
+    
+@font-face{
+    font-family:'DNFForgedBlade';font-style:normal;font-weight:500;
+    src:url('//cdn.df.nexon.com/img/common/font/DNFForgedBlade-Medium.otf')format('opentype')
+}
+    
+@font-face{
+    font-family:'DNFForgedBlade';font-style:normal;font-weight:700;
+    src:url('//cdn.df.nexon.com/img/common/font/DNFForgedBlade-Bold.otf')format('opentype')
+}
