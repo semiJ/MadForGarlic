@@ -1,12 +1,12 @@
 :root {
     /* color */
-    --medColor01 : #ffffff;
-    --madColor02 : #000000;
-    --madColor03 : #CDCAC6;
-    --madColor04 : #EAD8C0;
-    --madColor05 : #AD8350;
-    --madColor06 : #A3171B;
-    --madColor07 : transparent;
+    --medColorPalette01 : #ffffff;
+    --madColorPalette02 : #000000;
+    --madColorPalette03 : #CDCAC6;
+    --madColorPalette04 : #EAD8C0;
+    --madColorPalette05 : #AD8350;
+    --madColorPalette06 : #A3171B;
+    --madColorPalette07 : transparent;
 
     /* size */
 }
@@ -49,7 +49,7 @@ html {
     }
 
     header .headerMenu .rsvt {
-        background-color: var(--madColor05);
+        background-color: var(--madColorPalette05);
         border-radius: 20px;
         color: var(--medColor01);
         padding: 1rem;
@@ -70,7 +70,7 @@ html {
     /* header hover */
 
     header:hover {
-        background-color: var(--madColor02);
+        background-color: var(--madColorPalette02);
     }
 
     header:hover .mainlogo {
@@ -82,7 +82,7 @@ html {
     }
 
     header:hover .headerMenu {
-        color: var(--medColor01);
+        color: var(--medColorPalette01);
     }
 
     header:hover .mainUser {
@@ -91,11 +91,11 @@ html {
 
     header:hover .subUser {
         display: block;
-        color: var(--medColor01);
+        color: var(--medColorPalette01);
     }
 
     header .headerMenu a:hover {
-        color: var(--madColor06);
+        color: var(--medColorPalette06);
     }
 
     /* /header hover */
@@ -118,7 +118,7 @@ html {
     /* scroll 영역 */
 
     header.on {
-        background-color: var(--madColor02);
+        background-color: var(--medColorPalette02);
     }
 
     header.on .mainlogo {
@@ -130,7 +130,7 @@ html {
     }
 
     header.on .headerMenu {
-        color: var(--medColor01);
+        color: var(--medColorPalette01);
     }
 
     header.on .mainUser {
@@ -139,11 +139,11 @@ html {
 
     header.on .subUser {
         display: block;
-        color: var(--medColor01);
+        color: var(--medColorPalette01);
     }
 
     header .headerMenu a.on {
-        color: var(--madColor06);
+        color: var(--medColorPalette06);
     }
 
     /* /scroll 영역 */
@@ -154,7 +154,7 @@ html {
     #banner {
         width: 100%;
         height: 100vh;
-        background-color: var(--madColor04);
+        background-color: var(--madColorPalette04);
     }
     /* /banner 영역 */
     /* /main 영역 */
