@@ -60,9 +60,13 @@ html {
         box-sizing: border-box;
     }
 
+    header .headerMenu li a:hover {
+        color: var(--madColorPalette06);
+    }
+
     header .userJoin {
         position: absolute;
-        right: 5%;
+        right: 2%;
         top: 50%;
         transform: translateY(-50%);
     }
@@ -93,11 +97,7 @@ html {
         display: block;
         color: var(--medColorPalette01);
     }
-
-    header .headerMenu a:hover {
-        color: var(--medColorPalette06);
-    }
-
+    
     /* /header hover */
 
     /* pc hide */
