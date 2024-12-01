@@ -22,7 +22,8 @@ a {
 }
 
 h2, h3, h4 {
-    font-family:'DNFForgedBlade';font-style:normal;font-weight:700;
+    font-family:'DNFForgedBlade';
+    font-style:normal;font-weight:700;
 }
 
 dd, ul, dt, ol, div {

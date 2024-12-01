@@ -6,6 +6,7 @@
     --madColorPalette04 : #EAD8C0;
     --madColorPalette05 : #AD8350;
     --madColorPalette06 : #A3171B;
+    --madColorPalette06sub : #e7898c;
     --madColorPalette07 : transparent;
 
     /* size */
@@ -25,6 +26,7 @@ html {
         position: fixed;
         padding: 1.5em;
         overflow: hidden;
+        z-index: 100;
     }
 
     header img {
@@ -118,7 +120,7 @@ html {
     /* scroll 영역 */
 
     header.on {
-        background-color: var(--medColorPalette02);
+        background-color: var(--madColorPalette02);
     }
 
     header.on .mainlogo {
@@ -142,16 +144,202 @@ html {
         color: var(--medColorPalette01);
     }
 
-    header .headerMenu a.on {
-        color: var(--medColorPalette06);
-    }
-
     /* /scroll 영역 */
-
     /* /header */
     /* main 영역 */
+
     /* banner 영역 */
+    #banner {
+        width: 100%;
+        height: 100vh;
+        min-height: 700px;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        /* background-color: var(--madColorPalette04); */
+    }
+
+    /* bannerPanel */
+    .bannerPanel {
+        width: 100%;
+        height: 100%;
+    }
+
+    .bannerPanel li {
+        z-index: 10;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: 1s;
+    }
+
+    .bannerPanel li.view {
+        opacity: 1;
+    }
+
+    .bannerPanel img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* banner navi */
+    .bannerPanelnavi {
+        z-index: 30;
+        position: absolute;
+        left: 50%;
+        bottom: 5%;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        transform: translateX(-50%);
+    }
+
+    .bannerPanelnavi li {
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+        background-color: var(--madColorPalette04);
+        cursor: pointer;
+    }
+
+    .bannerPanelnavi li.bnlist {
+        width: 2rem;
+        background-color: var(--madColorPalette05);
+        border-radius: 48%;
+    }
+    /* 앞뒤버튼 */
+    #banner > a{
+        display: block;
+        z-index:30;
+        position:absolute;
+        top:50%;
+        transform:translateY(-50%);
+        padding: 0.8rem 1.6rem;
+        border-radius: 50%;
+    }
+
+    .bnprev{
+        font-size: 2.5rem;
+        left:30px;
+        color: var(--madColorPalette04);
+    }
+
+    .bnnext{
+        font-size: 2.5rem;
+        right:30px;
+        color: var(--madColorPalette04);
+    }
     /* /banner 영역 */
+    /* mainMenu */
+    #mainMenu {
+        width: 100%;
+        /* background-color: var(--madColorPalette06sub); */
+        padding: 10em;
+        box-sizing: border-box;
+    }
+
+    #mainMenu h2 {
+        font-size: 4em;
+        color: var(--madColorPalette06);
+        margin-bottom: 2.5rem;
+        text-align: center;
+    }
+
+    .mainMenuList {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .mainMenuList li {
+        width: 350px;
+        height: 500px;
+        padding: 20px;
+        box-sizing: border-box;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .mainMenuList li:nth-child(1) {
+        background: url(./../img/section/mainmenu_img_01.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 30px;
+    }
+
+    .mainMenuList li:nth-child(2) {
+        background: url(./../img/section/mainmenu_img_02.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 30px;
+    }
+
+    .mainMenuList li:nth-child(3) {
+        background: url(./../img/section/mainmenu_img_03.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 30px;
+    }
+
+    .mainMenuList h3 {
+        font-size: 3em;
+        color: var(--madColorPalette06);
+    }
+
+    .nextMenu {
+        display: block;
+        z-index: 30;
+        position: absolute;
+        bottom: 1%;
+        transform: translateY(-50%);
+        padding: 0.7rem 1.4rem;
+        border-radius: 50%;
+        background-color: var(--madColorPalette06sub);
+        font-size: 2rem;
+        right: 30px;
+        color: var(--madColorPalette06);
+    }
+
+    .mainMenuList li.menuView {
+        width: 450px;
+        opacity: 0.7;
+        transition: 0.8s;
+    }
+    /* /mainMenu 영역 */
+
+    /* mainBrand 영역*/
+    #mainBrand {
+        background-color: var(--madColorPalette06sub);
+        width: 100%;
+        height: 70vh;
+        position: relative;
+    }
+
+    .mainBrandConcept img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        object-fit: cover;
+    }
+
+    .mainBrandConcept h3 {
+        font-size: 6rem;
+        color: var(--madColorPalette05);
+        position: absolute;
+        right: 2%;
+        bottom: 3%;
+    }
+    /* /mainBrand 영역*/
+
     /* /main 영역 */
 }
 
