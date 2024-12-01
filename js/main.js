@@ -102,7 +102,6 @@ $(function(){
     })
 
     // brand concept 영역
-
     let brandSum = $(".mainBrandConcept li").length;
     let lang = 1;
 
