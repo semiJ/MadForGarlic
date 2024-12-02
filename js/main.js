@@ -1,12 +1,4 @@
 $(function(){
-    let baseline = -900;
-
-    let banner = $("#banner").offset().top + baseline;
-    let mainMenu = $("#mainMenu").offset().top + baseline;
-    let mainBrand = $("#mainBrand").offset().top + baseline;
-    let mainMembership = $("#mainLocation").offset().top + baseline;
-    let mainEvent = $("#mainMembership").offset().top + baseline;
-    let ft = $("footer").offset().top + baseline;
 
     $(window).on("scroll",function(){
         let sc = $(this).scrollTop();
