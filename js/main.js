@@ -1,15 +1,5 @@
 $(function(){
 
-    $(window).on("scroll",function(){
-        let sc = $(this).scrollTop();
-
-        if(sc > 100){
-            $("header").addClass("on");
-        } else {
-            $("header").removeClass("on");
-        }
-    });
-
     //banner 이미지 자동 슬라이드
 
     let panel = document.querySelectorAll(".bannerPanel li"), 
@@ -108,7 +98,21 @@ $(function(){
       $(".mainBrandConcept li").eq(i).stop().fadeIn();
     }, 3000);
 
-    // 
+    // storeSearch 영역
+
+    let users = document.querySelector("#stSearch");
+    let btn = document.querySelector("#searchUser");
+
+        btn.addEventListener("click", function(){
+            let message = users.value;
+
+            let result = message == "" ? alert("글자를 입력해주세요") : alert(`${users}`);
+
+        });
+
+        users.addEventListener("focus",function(){
+            users.value = "";
+        })
 
 
 

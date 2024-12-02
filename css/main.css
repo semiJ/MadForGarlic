@@ -120,7 +120,7 @@
     .mainMenuList {
         display: flex;
         justify-content: center;
-        gap: 50px;
+        gap: 30px;
     }
 
     .mainMenuList li {
@@ -176,7 +176,7 @@
     }
 
     .mainMenuList li.menuView {
-        width: 450px;
+        width: 600px;
         opacity: 0.7;
         transition: 0.8s;
     }
@@ -264,20 +264,24 @@
         position: relative;
     }
 
+    .mainLocationdetail .store ul .storeName {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+    }
+
     .mainLocationdetail .store ul li:nth-child(1) {
         background-color: var(--madColorPalette06);
     }
 
     .mainLocationdetail .store ul li h4 {
         font-size: 2em;
-        margin-bottom: 0.5rem;
+        display: flex;
+        align-items: center;
     }
 
     .mainLocationdetail .rsv {
         font-size: 1em;
-        position: absolute;
-        right: 4%;
-        top: 18%;
         background-color: var(--madColorPalette06);
         padding: 1rem;
         box-sizing: border-box;
@@ -310,7 +314,7 @@
 
     .mainLocationdetail .storeMap {
         width: 50%;
-        height: 600px;
+        height: 650px;
         /* background-color: var(--madColorPalette05); */
     }
 
