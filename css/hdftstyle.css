@@ -1,0 +1,164 @@
+:root {
+    /* color */
+    --medColorPalette01 : #ffffff;
+    --madColorPalette02 : #000000;
+    --madColorPalette03 : #CDCAC6;
+    --madColorPalette04 : #EAD8C0;
+    --madColorPalette05 : #AD8350;
+    --madColorPalette06 : #A3171B;
+    --madColorPalette06sub : #e7898c;
+    --madColorPalette07 : transparent;
+
+    /* size */
+}
+
+@media all and (min-width:1024px) {
+    /* header */
+    header {
+        /* background-color: var(--madColor05); */
+        width: 100%;
+        height: 65px;
+        display: flex;
+        position: fixed;
+        padding: 1.5em;
+        overflow: hidden;
+        z-index: 100;
+    }
+
+    header img {
+        width: 4.5em;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    header .sublogo {
+        opacity: 0;
+    }
+
+    header .headerMenu {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 100;
+    }
+
+    header .headerMenu .rsvt {
+        background-color: var(--madColorPalette06);
+        border-radius: 20px;
+        color: var(--medColorPalette01);
+        padding: 1rem;
+    }
+
+    header .headerMenu a {
+        padding: 0.8rem;
+        box-sizing: border-box;
+    }
+
+    header .headerMenu li a:hover {
+        color: var(--madColorPalette06);
+    }
+
+    header .headerMenu li .rsvt:hover {
+        color: var(--madColorPalette05);
+    }
+
+    header .userJoin {
+        position: absolute;
+        right: 2%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    /* header hover */
+
+    header:hover {
+        background-color: var(--madColorPalette02);
+    }
+
+    header:hover .mainlogo {
+        opacity: 0;
+    }
+
+    header:hover .sublogo {
+        opacity: 1;
+    }
+
+    header:hover .headerMenu {
+        color: var(--medColorPalette01);
+    }
+
+    header:hover .mainUser {
+        display: none;
+    }
+
+    header:hover .subUser {
+        display: block;
+        color: var(--medColorPalette01);
+    }
+    
+    /* /header hover */
+
+    /* pc hide */
+    .menuBar {
+        display: none;
+    }
+
+    .subBack {
+        display: none;
+    }
+
+    .subUser {
+        display: none;
+    }
+    
+    /* /pc hide */
+
+    /* scroll 영역 */
+
+    header.on {
+        background-color: var(--madColorPalette02);
+    }
+
+    header.on .mainlogo {
+        opacity: 0;
+    }
+
+    header.on .sublogo {
+        opacity: 1;
+    }
+
+    header.on .headerMenu {
+        color: var(--medColorPalette01);
+    }
+
+    header.on .mainUser {
+        display: none;
+    }
+
+    header.on .subUser {
+        display: block;
+        color: var(--medColorPalette01);
+    }
+
+    /* /scroll 영역 */
+    /* /header 영역 */
+
+    /* footer 영역 */
+    /* /footer 영역 */
+}
+
+@media all and (min-width:768px) and (max-width:1023px) {
+
+}
+
+@media all and (min-width:480px) and (max-width:767px) {
+
+}
+
+@media all and (max-width:479px) {
+
+}
