@@ -151,7 +151,58 @@
     footer {
         width: 100%;
         height: 50vh;
+        padding: 8em;
+        box-sizing: border-box;
         background-color: var(--madColorPalette02);
+    }
+
+    footer .ftdetail {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        margin: 0px auto;
+        color: var(--medColorPalette01);
+    }
+
+    footer .ftdetail span {
+        display: inline-block;
+        margin: 0px 1rem;
+    }
+
+    footer .ftdetail > li {
+        width: 50%;
+        margin: 0px auto;
+    }
+
+    .ftdetailLeft p {
+        margin-bottom: 2rem;
+    }
+
+    .ftdetailRight .ftsns {
+        display: flex;
+        justify-content: center;
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .ftdetailRight .ftsns li {
+        margin: 0px auto;
+    }
+
+    .ftdetailRight .ftStore {
+        margin: 2rem 0px 0px 5rem;
+    }
+
+    .ftdetailRight .ftStore {
+        display: block;
+        align-items: center;
+    }
+
+    .ftdetailRight .ftStore li {
+        width: 50%;
+        font-size: 1.8rem;
+        padding: 1rem 2rem;
+        box-sizing: border-box;
     }
 
     /* /footer 영역 */
