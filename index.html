@@ -5,14 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <title>Med For Garlic</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/hdftstyle.css">
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/jquery.transform2d.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="js/hdft.js"></script>
     <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/hdftstyle.css">
+    <link rel="icon" type="image/ico" href="img/header/faivcon.ico">
 </head>
 <body>
     <header>
@@ -94,15 +97,15 @@
         <section id="mainMenu">
             <h2><span class="h_hide">MENU</span></h2>
             <ul class="mainMenuList">
-                <li>
+                <li class="upImg">
                     <h3>Main Menu</h3>
                     <a href="#" class="nextMenu"><i class="fa-solid fa-chevron-right"></i></a>
                 </li>
-                <li>
+                <li class="upImg">
                     <h3>Set Menu</h3>
                     <a href="#" class="nextMenu"><i class="fa-solid fa-chevron-right"></i></a>
                 </li>
-                <li>
+                <li class="upImg">
                     <h3>Starter<br>& Dessert</h3>
                     <a href="#" class="nextMenu"><i class="fa-solid fa-chevron-right"></i></a>
                 </li>
@@ -135,8 +138,13 @@
                 <li class="store">
                     <div class="storeSearch">
                         <h3>매장찾기</h3>
-                        <p>검색 
-                            <input id="stSearch" type="search" placeholder="매장명을 검색해주세요.">
+                        <p>
+                            <span>검색</span>
+                            <input 
+                            id="stSearch" 
+                            type="search" 
+                            placeholder="매장명을 입력해주세요.">
+
                             <i id="searchUser" class="fa-solid fa-magnifying-glass"></i>
                         </p>
                     </div>
@@ -187,10 +195,29 @@
         </section>
         <section id="mainMembership">
             <h2 class="h_hide">MEMBERSHIP</h2>
+            <ul class="membershipBenefit">
+                <li>
+                    <img src="img/section/vip-card.png" alt="vip이미지01">
+                    <h3>BIRTHDAY</h3>
+                    <p>생일에 즐기는<br>나만의 혜택</p>
+                </li>
+                <li>
+                    <img src="img/section/vip-card.png" alt="vip이미지02">
+                    <h3>REWARDS</h3>
+                    <p>모든 브랜드에서<br>적립하고 누리는 혜택</p>
+                </li>
+                <li>
+                    <img src="img/section/vip-card.png" alt="vip이미지03">
+                    <h3>WINE BADGE</h3>
+                    <p>멤버쉽 고객에게만<br>드리는 와인 프로모션</p>
+                </li>
+            </ul>
         </section>
     </div>
 
-    <footer></footer>
+    <footer>
+
+    </footer>
 
 </body>
 </html>

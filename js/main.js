@@ -1,4 +1,5 @@
 $(function(){
+    gsap.registerPlugin(ScrollTrigger);
 
     //banner 이미지 자동 슬라이드
 
@@ -31,7 +32,7 @@ $(function(){
                 i++;
             }
             style();
-        }, 4000)
+        }, 3000)
     }
 
     slide();
@@ -72,6 +73,26 @@ $(function(){
     })
 
     // 메뉴 영역
+    // const mainMenuls = document.querySelectorAll(".upImg");
+
+    // let sr = gsap.timeline({
+    //     scrollTrigger : {
+    //         trigger: "#mainMenu",
+    //         pin: true,
+    //         scrub: 1,
+    //         start: "top top",
+    //         end: "+=600%",
+    //         markers: false,
+    //     }
+    // });
+
+    // sr.from(mainMenuls, {
+    //     Y: "400%",
+    //     duration:"5",
+    //     ease: "none",
+    //     stagger:"3",
+    //     opacity: "0",
+    // });
 
     $(".mainMenuList li").on("mouseenter", function(){
         let i = $(this).index();
@@ -96,7 +117,11 @@ $(function(){
   
       $(".mainBrandConcept li").stop().fadeOut();
       $(".mainBrandConcept li").eq(i).stop().fadeIn();
-    }, 3000);
+
+      $(".mainBrandConcept li img").removeClass("moveBrand");
+      $(".mainBrandConcept li img").eq(i).addClass("moveBrand");
+
+    }, 800);
 
     // storeSearch 영역
 
@@ -106,13 +131,13 @@ $(function(){
         btn.addEventListener("click", function(){
             let message = users.value;
 
-            let result = message == "" ? alert("글자를 입력해주세요") : alert(`${users}`);
+            let result = message == "" ? alert("글자를 입력해주세요") : alert(message);
 
         });
 
         users.addEventListener("focus",function(){
             users.value = "";
-        })
+        });
 
 
 
