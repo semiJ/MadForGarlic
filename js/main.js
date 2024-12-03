@@ -75,24 +75,24 @@ $(function(){
     // 메뉴 영역
     const mainMenuls = document.querySelectorAll(".upImg");
 
-    let sr = gsap.timeline({
-        scrollTrigger : {
-            trigger: "#mainMenu",
-            pin: true,
-            scrub: 1,
-            start: "top top",
-            end: "+=600%",
-            markers: false,
-        }
-    });
+    // let sr = gsap.timeline({
+    //     scrollTrigger : {
+    //         trigger: "#mainMenu",
+    //         pin: true,
+    //         scrub: 1,
+    //         start: "top top",
+    //         end: "+=600%",
+    //         markers: false,
+    //     }
+    // });
 
-    sr.from(mainMenuls, {
-        Y: "400%",
-        duration:"5",
-        ease: "none",
-        stagger:"3",
-        opacity: "0",
-    });
+    // sr.from(mainMenuls, {
+    //     Y: "400%",
+    //     duration:"5",
+    //     ease: "none",
+    //     stagger:"3",
+    //     opacity: "0",
+    // });
 
     $(".mainMenuList li").on("mouseenter", function(){
         let i = $(this).index();

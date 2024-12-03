@@ -8,13 +8,14 @@
     --madColorPalette06 : #A3171B;
     --madColorPalette06sub : #e7898c;
     --madColorPalette07 : transparent;
-
-    /* size */
 }
 
 @media all and (min-width:1024px) {
     
     /* main 영역 */
+    #main {
+        overflow: hidden;
+    }
 
     /* banner 영역 */
     #banner {
@@ -111,6 +112,7 @@
         /* background-color: var(--madColorPalette06sub); */
         padding: 10em;
         box-sizing: border-box;
+        overflow: hidden;
     }
 
     #mainMenu h2 {
@@ -235,10 +237,11 @@
         /* background-color: var(--madColorPalette06sub); */
         padding: 10em;
         box-sizing: border-box;
+        overflow: hidden;
     }
 
     .mainLocationdetail {
-        width: 80%;
+        width: 90%;
         display: flex;
         justify-content: center;
         margin: 0px auto;
@@ -251,7 +254,7 @@
     }
     
     .mainLocationdetail .storeSearch h3 {
-        font-size: 3em;
+        font-size: 2.5em;
         color: var(--madColorPalette06);
         padding-right: 2rem;
         box-sizing: border-box;
@@ -380,6 +383,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            overflow: hidden;
 
             background: url(./../img/section/viproom.jpg);
             background-attachment: fixed;
