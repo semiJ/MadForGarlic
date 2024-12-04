@@ -221,11 +221,13 @@ html {
 }
 
     /* header */
+    
     header {
         /* background-color: var(--madColor05); */
         width: 100%;
         height: 65px;
         display: flex;
+        justify-content: space-between;
         position: fixed;
         padding: 1.5em;
         overflow: hidden;
@@ -244,38 +246,12 @@ html {
     }
 
     header .headerMenu {
-        display: flex;
-        justify-content: center;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 100;
-    }
-
-    header .headerMenu .rsvt {
-        background-color: var(--madColorPalette06);
-        border-radius: 20px;
-        color: var(--madColorPalette01);
-        padding: 1rem;
-    }
-
-    header .headerMenu a {
-        padding: 0.8rem;
-        box-sizing: border-box;
-    }
-
-    header .headerMenu li a:hover {
-        color: var(--madColorPalette06);
-    }
-
-    header .headerMenu li .rsvt:hover {
-        color: var(--madColorPalette05);
+        display: none;
     }
 
     header .userJoin {
         position: absolute;
-        right: 2%;
+        right: 14%;
         top: 50%;
         transform: translateY(-50%);
     }
@@ -306,23 +282,27 @@ html {
         display: block;
         color: var(--madColorPalette01);
     }
+
+    header:hover .bar01 {
+        background-color: var(--madColorPalette01);
+    }
+    
+    header:hover .bar02 {
+        background-color: var(--madColorPalette01);
+    }
+    
+    header:hover .bar03 {
+        background-color: var(--madColorPalette01);
+    }
     
     /* /header hover */
 
-    /* pc hide */
-    .menuBar {
-        display: none;
-    }
-
-    .subBack {
-        display: none;
-    }
+    /* hide */
 
     .subUser {
         display: none;
     }
-    
-    /* /pc hide */
+    /* hide */
 
     /* scroll 영역 */
 
@@ -351,7 +331,113 @@ html {
         color: var(--madColorPalette01);
     }
 
+    header.on .bar01 {
+        background-color: var(--madColorPalette01);
+    }
+    
+    header.on .bar02 {
+        background-color: var(--madColorPalette01);
+    }
+    
+    header.on .bar03 {
+        background-color: var(--madColorPalette01);
+    }
+
+    /* submenu */
+    .subBack {
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.8);
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        display: none;
+    }
+
+    .subMenu {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    nav .subMenu a {
+        display: block;
+        color: var(--madColorPalette06);
+        font-size: 2em;
+        padding: 0px 3em;
+        margin-bottom: 2rem;
+    }
+
+    nav .subMenu a:hover {
+        color: var(--madColorPalette06);
+    }
+
+    .viewControl {
+        display: block;
+        transition: 1s;
+    }
+    /* /submenu */
+
     /* /scroll 영역 */
+
+    /* menuBar 서브메뉴 bar */
+
+    .menuBar {
+        /* background-color: #eaf; */
+        width: 30px;
+        height: 23px;
+        position: relative;
+        top: 0px;
+        cursor: pointer;
+    }
+
+    .bar01 {
+        width: 30px;
+        height: 2px;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        background-color: var(--madColorPalette02);
+    }
+    
+    .bar02 {
+        width: 20px;
+        height: 2px;
+        position: absolute;
+        right: 0px;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: var(--madColorPalette02);
+    }
+    
+    .bar03 {
+        width: 30px;
+        height: 2px;
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        background-color: var(--madColorPalette02);
+    }
+    
+    .active .bar01 {
+        top: 50%;
+        transform: translateY(-50%) rotate(45deg);
+        transition: 0.5s;
+        color: var(--madColorPalette01);
+    }
+    
+    .active .bar02 {
+        display: none;
+        color: var(--madColorPalette01);
+    }
+    
+    .active .bar03 {
+        bottom: 50%;
+        transform: translateY(50%) rotate(-45deg);
+        transition: 0.5s;
+        color: var(--madColorPalette01);
+    }
 
     /* /header 영역 */
 

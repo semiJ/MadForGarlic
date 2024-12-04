@@ -5,5 +5,11 @@ $(window).on("scroll",function(){
         $("header").addClass("on");
     } else {
         $("header").removeClass("on");
-    }
+    };
+
+    $("nav .menuBar").on("click", function(){
+        $(this).toggleClass("active");
+        $("nav .subBack").toggleClass("viewControl");
+    });
+
 });
