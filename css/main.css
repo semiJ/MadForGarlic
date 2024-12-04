@@ -138,7 +138,7 @@
     }
 
     #banner .floaing.on {
-        opacity: 0;
+        display: none;
     }
     /* /banner 영역 */
     /* mainMenu */
@@ -592,8 +592,8 @@
         }
     }
 
-    #banner .floaing.on {
-        opacity: 0;
+    #banner .floaing.rmv {
+        display: none;
     }
 
     /* /banner 영역 */
@@ -1039,7 +1039,7 @@
         }
     }
 
-    #banner .floaing.on {
+    #banner .floaing.rmv {
         display: none;
     }
 
@@ -1286,7 +1286,7 @@
 
     .mainLocationdetail .storeMap {
         width: 100%;
-        height: 650px;
+        height: 25em;
         /* background-color: var(--madColorPalette05); */
         margin-bottom: 50px;
     }
@@ -1487,8 +1487,8 @@
         }
     }
 
-    #banner .floaing.on {
-        opacity: 0;
+    #banner .floaing.rmv {
+        display: none;
     }
 
     /* /banner 영역 */

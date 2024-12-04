@@ -3,18 +3,15 @@ $(window).on("scroll",function(){
 
     if(sc > 100){
         $("header").addClass("on");
-        $(".floaing").addClass("on");
+        $(".floaing").addClass("rmv");
     } else {
         $("header").removeClass("on");
-        $(".floaing").removeClass("on");
+        $(".floaing").removeClass("rmv");
     };
 
     $("nav .menuBar").on("click", function(){
         $(this).toggleClass("active");
-
         $("nav .subBack").toggleClass("viewControl");
-
-        $(".floaing").toggleClass("on");
     });
 
 });
