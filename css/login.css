@@ -1,6 +1,6 @@
 :root {
     /* color */
-    --medColorPalette01 : #ffffff;
+    --madColorPalette01 : #ffffff;
     --madColorPalette02 : #000000;
     --madColorPalette03 : #CDCAC6;
     --madColorPalette04 : #EAD8C0;
@@ -20,7 +20,7 @@
     }
 
     .join {
-        width: 100%;
+        width: 40%;
         margin: 0px auto;
         text-align: center;
         border: 2px solid var(--madColorPalette06);
@@ -46,14 +46,14 @@
         border-bottom: 1px solid var(--madColorPalette02);
     }
 
-    .join .loginbtn {
+    .join #loginbtn {
         width: 15em;
         padding: 1rem 2rem;
         margin: 0px auto;
         margin-top: 0.8rem;
         font-size: 1.2rem;
         background-color: var(--madColorPalette06);
-        color: var(--medColorPalette01);
+        color: var(--madColorPalette01);
         border-radius: 5px;
     }
     
@@ -88,6 +88,33 @@
     .easy .naverlogin {
         width: 4.3em;
         margin-top: 0.4em;
+    }
+
+    .join .floaing {
+        width: 10%;
+        position: fixed;
+        right: 38%;
+        top: 28%;
+        background-color: var(--madColorPalette06sub);
+        border-radius: 10px;
+        padding: 1rem;
+        color: var(--madColorPalette06);
+
+        animation: btnani 2s linear infinite;
+    }
+
+    @keyframes btnani {
+        0% {
+           transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(10px);
+        }
+
+        100% {
+            transform: translateY(0px);
+        }
     }
 
 }
@@ -128,14 +155,14 @@
         border-bottom: 1px solid var(--madColorPalette02);
     }
 
-    .join .loginbtn {
+    .join #loginbtn {
         width: 15em;
         padding: 1rem 2rem;
         margin: 0px auto;
         margin-top: 0.8rem;
         font-size: 1.2rem;
         background-color: var(--madColorPalette06);
-        color: var(--medColorPalette01);
+        color: var(--madColorPalette01);
         border-radius: 5px;
     }
     
@@ -170,6 +197,33 @@
     .easy .naverlogin {
         width: 4.3em;
         margin-top: 0.4em;
+    }
+
+    .join .floaing {
+        width: 28%;
+        position: fixed;
+        right: 16%;
+        top: 28%;
+        background-color: var(--madColorPalette06sub);
+        border-radius: 10px;
+        padding: 1rem;
+        color: var(--madColorPalette06);
+
+        animation: btnani 2s linear infinite;
+    }
+
+    @keyframes btnani {
+        0% {
+           transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(10px);
+        }
+
+        100% {
+            transform: translateY(0px);
+        }
     }
 }
 
@@ -209,14 +263,14 @@
         border-bottom: 1px solid var(--madColorPalette02);
     }
 
-    .join .loginbtn {
+    .join #loginbtn {
         width: 15em;
         padding: 1rem 2rem;
         margin: 0px auto;
         margin-top: 0.8rem;
         font-size: 1.2rem;
         background-color: var(--madColorPalette06);
-        color: var(--medColorPalette01);
+        color: var(--madColorPalette01);
         border-radius: 5px;
     }
     
@@ -251,6 +305,33 @@
     .easy .naverlogin {
         width: 4.3em;
         margin-top: 0.4em;
+    }
+
+    .join .floaing {
+        width: 28%;
+        position: fixed;
+        right: 16%;
+        top: 28%;
+        background-color: var(--madColorPalette06sub);
+        border-radius: 10px;
+        padding: 1rem;
+        color: var(--madColorPalette06);
+
+        animation: btnani 2s linear infinite;
+    }
+
+    @keyframes btnani {
+        0% {
+           transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(10px);
+        }
+
+        100% {
+            transform: translateY(0px);
+        }
     }
 }
 
@@ -272,15 +353,16 @@
         padding: 3em 2.5em;
         box-sizing: border-box;
         overflow: hidden;
+        position: relative;
     }
 
     .join h2 {
-        font-size: 3em;
+        font-size: 2em;
         color: var(--madColorPalette06);
     }
 
     .join input {
-        width: 15em;
+        width: 12em;
         display: block;
         padding: 1rem 1.5rem;
         margin: 0px auto;
@@ -290,14 +372,14 @@
         border-bottom: 1px solid var(--madColorPalette02);
     }
 
-    .join .loginbtn {
-        width: 15em;
+    .join #loginbtn {
+        width: 12em;
         padding: 1rem 2rem;
         margin: 0px auto;
         margin-top: 0.8rem;
         font-size: 1.2rem;
         background-color: var(--madColorPalette06);
-        color: var(--medColorPalette01);
+        color: var(--madColorPalette01);
         border-radius: 5px;
     }
     
@@ -307,11 +389,11 @@
     }
 
     .finding .user {
-        margin-left: 3em;
+        margin-left: 1em;
     }
 
     .kakaologin {
-        width: 18em;
+        width: 16em;
         height: 4em;
         object-fit: cover;
         border-radius: 5px;
@@ -321,7 +403,7 @@
     .easy {
         display: flex;
         justify-content: center;
-        gap: 30px;
+        gap: 15px;
     }
 
     .easy img {
@@ -332,5 +414,32 @@
     .easy .naverlogin {
         width: 4.3em;
         margin-top: 0.4em;
+    }
+
+    .join .floaing {
+        width: 28%;
+        position: fixed;
+        right: 16%;
+        top: 36%;
+        background-color: var(--madColorPalette06sub);
+        border-radius: 10px;
+        padding: 1rem;
+        color: var(--madColorPalette06);
+
+        animation: btnani 2s linear infinite;
+    }
+
+    @keyframes btnani {
+        0% {
+           transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(10px);
+        }
+
+        100% {
+            transform: translateY(0px);
+        }
     }
 }

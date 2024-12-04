@@ -1,6 +1,6 @@
 :root {
     /* color */
-    --medColorPalette01 : #ffffff;
+    --madColorPalette01 : #ffffff;
     --madColorPalette02 : #000000;
     --madColorPalette03 : #CDCAC6;
     --madColorPalette04 : #EAD8C0;
@@ -49,7 +49,7 @@
     header .headerMenu .rsvt {
         background-color: var(--madColorPalette06);
         border-radius: 20px;
-        color: var(--medColorPalette01);
+        color: var(--madColorPalette01);
         padding: 1rem;
     }
 
@@ -88,7 +88,7 @@
     }
 
     header:hover .headerMenu {
-        color: var(--medColorPalette01);
+        color: var(--madColorPalette01);
     }
 
     header:hover .mainUser {
@@ -97,7 +97,7 @@
 
     header:hover .subUser {
         display: block;
-        color: var(--medColorPalette01);
+        color: var(--madColorPalette01);
     }
     
     /* /header hover */
@@ -132,7 +132,7 @@
     }
 
     header.on .headerMenu {
-        color: var(--medColorPalette01);
+        color: var(--madColorPalette01);
     }
 
     header.on .mainUser {
@@ -141,28 +141,30 @@
 
     header.on .subUser {
         display: block;
-        color: var(--medColorPalette01);
+        color: var(--madColorPalette01);
     }
 
     /* /scroll 영역 */
+
     /* /header 영역 */
 
     /* footer 영역 */
     footer {
         width: 100%;
-        height: 50vh;
+        height: 30vh;
         padding: 3em;
         box-sizing: border-box;
         background-color: var(--madColorPalette02);
         overflow: hidden;
     }
 
+
     footer .ftdetail {
         width: 80%;
         display: flex;
         justify-content: center;
         margin: 0px auto;
-        color: var(--medColorPalette01);
+        color: var(--madColorPalette01);
     }
 
     footer .ftdetail span {
@@ -214,7 +216,206 @@
 }
 
 @media all and (min-width:480px) and (max-width:767px) {
+html {
+    height: 3000px;
+}
 
+    /* header */
+    header {
+        /* background-color: var(--madColor05); */
+        width: 100%;
+        height: 65px;
+        display: flex;
+        position: fixed;
+        padding: 1.5em;
+        overflow: hidden;
+        z-index: 100;
+    }
+
+    header img {
+        width: 4.5em;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    header .sublogo {
+        opacity: 0;
+    }
+
+    header .headerMenu {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 100;
+    }
+
+    header .headerMenu .rsvt {
+        background-color: var(--madColorPalette06);
+        border-radius: 20px;
+        color: var(--madColorPalette01);
+        padding: 1rem;
+    }
+
+    header .headerMenu a {
+        padding: 0.8rem;
+        box-sizing: border-box;
+    }
+
+    header .headerMenu li a:hover {
+        color: var(--madColorPalette06);
+    }
+
+    header .headerMenu li .rsvt:hover {
+        color: var(--madColorPalette05);
+    }
+
+    header .userJoin {
+        position: absolute;
+        right: 2%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    /* header hover */
+
+    header:hover {
+        background-color: var(--madColorPalette02);
+    }
+
+    header:hover .mainlogo {
+        opacity: 0;
+    }
+
+    header:hover .sublogo {
+        opacity: 1;
+    }
+
+    header:hover .headerMenu {
+        color: var(--madColorPalette01);
+    }
+
+    header:hover .mainUser {
+        display: none;
+    }
+
+    header:hover .subUser {
+        display: block;
+        color: var(--madColorPalette01);
+    }
+    
+    /* /header hover */
+
+    /* pc hide */
+    .menuBar {
+        display: none;
+    }
+
+    .subBack {
+        display: none;
+    }
+
+    .subUser {
+        display: none;
+    }
+    
+    /* /pc hide */
+
+    /* scroll 영역 */
+
+    header.on {
+        background-color: var(--madColorPalette02);
+    }
+
+    header.on .mainlogo {
+        opacity: 0;
+    }
+
+    header.on .sublogo {
+        opacity: 1;
+    }
+
+    header.on .headerMenu {
+        color: var(--madColorPalette01);
+    }
+
+    header.on .mainUser {
+        display: none;
+    }
+
+    header.on .subUser {
+        display: block;
+        color: var(--madColorPalette01);
+    }
+
+    /* /scroll 영역 */
+
+    /* /header 영역 */
+
+    /* footer 영역 */
+    footer {
+        width: 100%;
+        height: 30vh;
+        padding: 3em;
+        box-sizing: border-box;
+        background-color: var(--madColorPalette02);
+        overflow: hidden;
+    }
+
+
+    footer .ftdetail {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        margin: 0px auto;
+        color: var(--madColorPalette01);
+    }
+
+    footer .ftdetail span {
+        display: inline-block;
+        margin: 0px 1rem;
+    }
+
+    footer .ftdetail > li {
+        width: 50%;
+        margin: 0px auto;
+    }
+
+    .ftdetailLeft p {
+        margin-bottom: 1.8rem;
+    }
+
+    .ftdetailRight .ftsns {
+        display: flex;
+        justify-content: center;
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .ftdetailRight .ftsns li {
+        margin: 0px auto;
+    }
+
+    .ftdetailRight .ftStore {
+        margin: 2rem 0px 0px 5rem;
+    }
+
+    .ftdetailRight .ftStore {
+        display: block;
+        align-items: center;
+    }
+
+    .ftdetailRight .ftStore li {
+        width: 100%;
+        font-size: 1.8rem;
+        padding: 1rem 2rem;
+        box-sizing: border-box;
+    }
+
+    /* /footer 영역 */
 }
 
 @media all and (max-width:479px) {
