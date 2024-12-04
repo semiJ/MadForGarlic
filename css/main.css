@@ -465,7 +465,452 @@
 }
 
 @media all and (min-width:480px) and (max-width:767px) {
+    /* main 영역 */
+    #main {
+        overflow: hidden;
+    }
 
+    /* banner 영역 */
+    #banner {
+        width: 100%;
+        height: 30vh;
+        min-height: 700px;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        /* background-color: var(--madColorPalette04); */
+    }
+
+    /* bannerPanel */
+    .bannerPanel {
+        width: 100%;
+        height: 100%;
+    }
+
+    .bannerPanel li {
+        z-index: 10;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: 1s;
+        transform: scale(1.2);
+    }
+
+    .bannerPanel li.view {
+        opacity: 1;
+        transform: scale(1);
+        transition: 2s;
+    }
+
+    .bannerPanel img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* banner navi */
+    .bannerPanelnavi {
+        z-index: 30;
+        position: absolute;
+        left: 50%;
+        bottom: 5%;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        transform: translateX(-50%);
+    }
+
+    .bannerPanelnavi li {
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+        background-color: var(--madColorPalette04);
+        cursor: pointer;
+    }
+
+    .bannerPanelnavi li.bnlist {
+        width: 2rem;
+        background-color: var(--madColorPalette05);
+        border-radius: 30px;
+    }
+    /* 앞뒤버튼 */
+    #banner > a{
+        display: block;
+        z-index:30;
+        position:absolute;
+        top:50%;
+        transform:translateY(-50%);
+        padding: 0.8rem 1.6rem;
+        border-radius: 50%;
+    }
+
+    .bnprev{
+        font-size: 2.5rem;
+        left:30px;
+        color: var(--madColorPalette04);
+    }
+
+    .bnnext{
+        font-size: 2.5rem;
+        right:30px;
+        color: var(--madColorPalette04);
+    }
+
+    #banner .floaing {
+        width: 70px;
+        height: 30px;
+        position: fixed;
+        right: 54px;
+        top: 40px;
+        background-color: var(--madColorPalette06sub);
+        border-radius: 10px;
+        padding: 1rem;
+        color: var(--madColorPalette06);
+        z-index: 200;
+        display: block;
+        text-align: right;
+        line-height: 4px;
+
+        animation: btnani 2s linear infinite;
+    }
+
+    @keyframes btnani {
+        0% {
+           transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(10px);
+        }
+
+        100% {
+            transform: translateY(0px);
+        }
+    }
+
+    /* /banner 영역 */
+
+    /* mainMenu */
+    #mainMenu {
+        width: 100%;
+        /* background-color: var(--madColorPalette06sub); */
+        padding: 6em 3em;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    #mainMenu h2 {
+        font-size: 4em;
+        color: var(--madColorPalette06);
+        margin-bottom: 2.5rem;
+        text-align: center;
+    }
+
+    .mainMenuList li {
+        width: 400px;
+        height: 500px;
+        padding: 20px;
+        box-sizing: border-box;
+        cursor: pointer;
+        position: relative;
+        top: 400%;
+        margin-bottom: 20px;
+    }
+
+    .mainMenuList li:nth-child(1) {
+        background: url(./../img/section/mainmenu_img_01.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 30px;
+    }
+
+    .mainMenuList li:nth-child(2) {
+        background: url(./../img/section/mainmenu_img_02.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 30px;
+    }
+
+    .mainMenuList li:nth-child(3) {
+        background: url(./../img/section/mainmenu_img_03.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 30px;
+    }
+
+    .mainMenuList h3 {
+        font-size: 3em;
+        color: var(--madColorPalette06);
+    }
+
+    .nextMenu {
+        display: block;
+        z-index: 30;
+        position: absolute;
+        right: 20px;
+        bottom: -5px;
+        transform: translateY(-50%);
+        padding: 0.7rem 1.4rem;
+        border-radius: 50%;
+        background-color: var(--madColorPalette06sub);
+        font-size: 2rem;
+        color: var(--madColorPalette06);
+    }
+
+    .mainMenuList li.menuView {
+        width: 600px;
+        opacity: 0.7;
+        transition: 0.8s;
+    }
+
+    
+    /* /mainMenu 영역 */
+
+    /* mainBrand 영역*/
+    #mainBrand {
+        background-color: var(--madColorPalette06sub);
+        width: 100%;
+        height: 70vh;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .mainBrandConcept img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        object-fit: cover;
+    }
+
+    .mainBrand li {
+        overflow: hidden;
+    }
+
+    .mainBrandConcept h3 {
+        width: 100%;
+        font-size: 6rem;
+        color: var(--madColorPalette05);
+        position: absolute;
+        left: 20%;
+        top: 50%;
+    }
+
+    .mainBrandConcept li img {
+        transform: scale(1.2);
+    }
+
+    .mainBrandConcept li img.moveBrand {
+        transform: scale(1);
+        transition: 1.2s;
+    }
+
+    
+    /* /mainBrand 영역*/
+
+    /* mainLocation 영역 */
+    #mainLocation {
+        width: 100%;
+        /* background-color: var(--madColorPalette06sub); */
+        padding: 10em;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    .mainLocationdetail {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        margin: 0px auto;
+    }
+
+    .mainLocationdetail .storeSearch {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2em;
+    }
+    
+    .mainLocationdetail .storeSearch h3 {
+        font-size: 2.5em;
+        color: var(--madColorPalette06);
+        padding-right: 2rem;
+        box-sizing: border-box;
+    }
+
+    .mainLocationdetail .storeSearch p {
+        font-size: 1em;
+        display: flex;
+        align-items: center;
+        color: var(--madColorPalette06);
+    }
+
+    .mainLocationdetail .storeSearch p span {
+        font-size: 1.5em;
+        display: block;
+        padding: 1rem;
+        box-sizing: border-box;
+    }
+
+    .mainLocationdetail input {
+        border: none;
+        border-bottom: 1px solid var(--madColorPalette02);
+        padding: 0.5rem;
+        box-sizing: border-box;
+    }
+
+    .mainLocationdetail .store {
+        width: 50%;
+        /* background-color: var(--madColorPalette05); */
+        padding: 2.5em 5em;
+        box-sizing: border-box;
+    }
+
+    .mainLocationdetail .store ul li {
+        background-color: var(--madColorPalette06sub);
+        margin-bottom: 1rem;
+        color: var(--madColorPalette01);
+        border-radius: 20px;
+        padding: 1rem 2rem;
+        box-sizing: border-box;
+        position: relative;
+    }
+
+    .mainLocationdetail .store ul .storeName {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+    }
+
+    .mainLocationdetail .store ul li:nth-child(1) {
+        background-color: var(--madColorPalette06);
+    }
+
+    .mainLocationdetail .store ul li h4 {
+        font-size: 2em;
+        display: flex;
+        align-items: center;
+    }
+
+    .mainLocationdetail .rsv {
+        font-size: 1em;
+        background-color: var(--madColorPalette06);
+        padding: 1rem;
+        box-sizing: border-box;
+        border-radius: 10px;
+    }
+
+    .mainLocationdetail .store ul li:nth-child(1) .rsv {
+        background-color: var(--madColorPalette06sub);
+    }
+
+    .mainLocationdetail .storePageNum {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 3em;
+    }
+
+    .storePageNum li {
+        cursor: pointer;
+    }
+
+    .storePageNum li:hover {
+        color: var(--madColorPalette06);
+    }
+
+    .mainLocationdetail .storePageNum li:nth-child(2) {
+        font-weight: bolder;
+        color: var(--madColorPalette06sub);
+    }
+
+    .mainLocationdetail .store ul li p:last-child {
+        margin-top: 0.3rem;
+    }
+
+    .mainLocationdetail .storeMap {
+        width: 50%;
+        height: 650px;
+        /* background-color: var(--madColorPalette05); */
+    }
+
+    .mainLocationdetail .storeMap iframe {
+        width: 100%;
+        height: 100%;
+        border-radius: 50px;
+    }
+
+    /* rsv hover */
+
+    .mainLocationdetail .rsv:hover a {
+        color: var(--madColorPalette06sub);
+    }
+
+    .mainLocationdetail ul li:nth-child(1) .rsv:hover a {
+        color: var(--madColorPalette06);
+    }
+
+    /* /rsv hover */
+
+    /* /mainLocation 영역 */
+
+    /* mainMembership 영역 */
+        #mainMembership {
+            width: 100%;
+            height: 70vh;
+            padding: 5em 2em;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+
+            background: url(./../img/section/viproom.jpg);
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .membershipBenefit {
+            display: flex;
+            justify-content: center;
+            gap: 150px;
+            text-align: center;
+            align-items: center;
+        }
+
+        .membershipBenefit li:hover {
+            transform: scale(0.8);
+            transition: 0.8s;
+        }
+
+        .membershipBenefit li h3 {
+            font-size: 3em;
+            color: var(--madColorPalette06);
+            margin: 1rem 0px;
+        }
+
+        .membershipBenefit li p {
+            font-size: 1.5em;
+            color: var(--madColorPalette01);
+        }
+
+        .membershipBenefit img {
+            width: 20em;
+            object-fit: cover;
+        }
+
+
+    /* /mainMembership 영역 */
+
+    /* /main 영역 */
 }
 
 @media all and (max-width:479px) {

@@ -73,36 +73,37 @@ $(function(){
     })
 
     // 메뉴 영역
-    const mainMenuls = document.querySelectorAll(".upImg");
 
-    // let sr = gsap.timeline({
-    //     scrollTrigger : {
-    //         trigger: "#mainMenu",
-    //         pin: true,
-    //         scrub: 1,
-    //         start: "top top",
-    //         end: "+=600%",
-    //         markers: false,
-    //     }
-    // });
-
-    // sr.from(mainMenuls, {
-    //     Y: "400%",
-    //     duration:"5",
-    //     ease: "none",
-    //     stagger:"3",
-    //     opacity: "0",
-    // });
-
-    $(".mainMenuList li").on("mouseenter", function(){
-        let i = $(this).index();
-        $(".mainMenuList li").eq(i).addClass("menuView");
+    $(function() {
+        // 함수로 메뉴 이벤트 처리
+        function handleMenuEvents() {
+            let isMobile = window.matchMedia("(max-width: 768px)").matches;
+    
+            // 모바일 환경이 아닌 경우에만 실행
+            if (!isMobile) {
+                $(".mainMenuList li").on("mouseenter", function() {
+                    let i = $(this).index();
+                    $(".mainMenuList li").eq(i).addClass("menuView");
+                });
+    
+                $(".mainMenuList li").on("mouseleave", function() {
+                    let i = $(this).index();
+                    $(".mainMenuList li").removeClass("menuView");
+                });
+            } else {
+                // 모바일 환경에서는 메뉴 이벤트 리스너를 제거 (필요할 경우)
+                $(".mainMenuList li").off("mouseenter mouseleave");
+            }
+        }
+    
+        // 초기 화면에서 실행
+        handleMenuEvents();
+    
+        // 화면 크기 변화가 있을 때마다 실행
+        window.matchMedia("(max-width: 768px)").addListener(function() {
+            handleMenuEvents();
+        });
     });
-
-    $(".mainMenuList li").on("mouseleave", function(){
-        let i = $(this).index();
-        $(".mainMenuList li").removeClass("menuView");
-    })
 
     // brand concept 영역
     let brandSum = $(".mainBrandConcept li").length;
