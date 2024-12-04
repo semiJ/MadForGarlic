@@ -69,15 +69,8 @@ $(function(){
             
             style();
             slide();
-        })
+        });
     })
-
-    //버튼 숨기기
-    $("nav .menuBar").on("click", function(){
-        $(this).toggleClass("rmv");
-        
-        $("#banner .floaing").toggleClass("rmv");
-    });
 
     // 메뉴 영역
 

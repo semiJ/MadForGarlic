@@ -12,6 +12,14 @@ $(window).on("scroll",function(){
     $("nav .menuBar").on("click", function(){
         $(this).toggleClass("active");
         $("nav .subBack").toggleClass("viewControl");
+
+    });
+
+    //플로팅 버튼 숨기기
+    $("nav .menuBar").on("click", function(){
+        $(this).toggleClass("rmv");
+        
+        $("#banner .floaing").toggleClass("rmv");
     });
 
 });

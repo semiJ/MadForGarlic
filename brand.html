@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.transform2d.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="js/hdft.js"></script>
+    <script src="js/brand.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/brand.css">
+    <link rel="stylesheet" href="css/hdftstyle.css">
+    <link rel="icon" type="image/ico" href="img/header/faivcon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>Brand</title>
+</head>
+<body>
+    <header>
+        <!-- main logo 영역 -->
+         <h1>
+            <a href="index.html">
+                <img class="mainlogo" src="img/header/pop_logo.png" alt="메인 로고 이미지">
+                <img class="sublogo" src="img/header/logoB_B2.png" alt="서브 로고 이미지">
+            </a>
+        </h1>
+        <!-- /main logo 영역 영역-->
+        <!-- nav 영역 -->
+        <nav>
+            <ul class="headerMenu">
+                <li><a href="#">BRAND</a></li>
+                <li><a href="#">MENU</a></li>
+                <li><a href="#">MEMBERSHIP</a></li>
+                <li><a href="#">EVENT</a></li>
+                <li><a href="#">CUSTOMER</a></li>
+                <li><a class="rsvt" href="#">RESERVATION</a></li>
+            </ul>
+            <!-- herder menu icon 영역 -->
+            <div class="userJoin">
+                <div class="mainUser">
+                    <span class="mainUserHide">Sign In</span>
+                    <a href="login.html" target="_blank"><i class="fa-solid fa-user"></i></a>
+                </div>
+                <div class="subUser">
+                    <span class="subUserHide">Sign In</span>
+                    <a href="login.html" target="_blank"><i class="fa-regular fa-user"></i></a>
+                </div>
+            </div>
+            <ul class="menuBar">
+                        <li class="bar01"><span class="h_hide">메뉴상단</span></li>
+                        <li class="bar02"><span class="h_hide">메뉴중간</span></li>
+                        <li class="bar03"><span class="h_hide">메뉴하단</span></li>
+                    </ul>
+            <!-- /herder menu icon 영역 -->
+            <div class="subBack">
+                <ul class="subMenu">
+                    <li><a href="#">BRAND</a></li>
+                    <li><a href="#">MENU</a></li>
+                    <li><a href="#">MEMBERSHIP</a></li>
+                    <li><a href="#">EVENT</a></li>
+                    <li><a href="#">CUSTOMER</a></li>
+                </ul>
+                <a class="rsvt" href="#">RESERVATION</a>
+           </div>
+        </nav>
+        <!-- /nav 영역 -->
+    </header>
+
+    <div id="main">
+        <section id="brandVideo">
+            <h2 class="h_hide">브랜드비디오</h2>
+            <iframe 
+            src="https://www.youtube.com/embed/NSOmjgVN1og?si=0So0Ymer3B_Yjpk9&amp;controls=0&amp;autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=NSOmjgVN1og" 
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+            </iframe>
+        </section>
+        <section id="brandNews">
+            <h2 class="h_hide">브랜드뉴스</h2>
+            <div class="brandNewsDetail">
+                <ul>
+                    <li>
+                        <a href="https://www.mhns.co.kr/news/articleView.html?idxno=704485">매드포갈릭, 겨울 한정 세트 메뉴 ‘프리미엄 본 인 립아이 스테이크 세트’ 출시
+                        </a>
+                        <img src="img/section/brandNewsImg01.jpg" alt="브랜드뉴스이미지01">
+                    </li>
+                    <li>
+                        <a href="https://www.ebn.co.kr/news/articleView.html?idxno=1644730">매드포갈릭, 런치세트 출시기념 전 메뉴 20% 할인
+                        </a>
+                        <img src="img/section/brandNewsImg02.jpg" alt="브랜드뉴스이미지02">
+                    </li>
+                    <li>
+                        <a href="https://www.fnnews.com/news/202411291439522158">
+                        매드포갈릭, 밝고 편한 분위기로 브랜드 전면 개편 후 재도약
+                        </a>
+                        <img src="img/section/brandNewsImg03.jpg" alt="브랜드뉴스이미지03">
+                    </li>
+                    <li>
+                        <a href="https://www.ebn.co.kr/news/articleView.html?idxno=1644855">[현장] 새롭게 태어난 '매드포갈릭'…매장·메뉴 싹 다 바꿨다</a>
+                        <img src="img/section/brandNewsImg04.jpg" alt="브랜드뉴스이미지04">
+                    </li>
+                    <li>
+                        <a href="https://sports.donga.com/article/all/20241120/130467947/1">“매출 37% 상승” 매드포갈릭, 리브랜딩 효과 톡톡</a>
+                        <img src="img/section/brandNewsImg05.jpg" alt="브랜드뉴스이미지05">
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="brandConcept">
+            <h2 class="h_hide">브랜드컨셉</h2>
+        </section>
+    </div>
+
+    <footer>
+        <ul class="ftdetail">
+            <li class="ftdetailLeft">
+                <p>
+                    (주)엠에프지코리아 서울시 강남구 학동로 306,<br>곤비빌딩 B2F / 우편번호: 06098
+                </p>
+                <p>
+                    대표문의: 02-2286-8800
+                </p>
+                <p>
+                    사업자번호: 261-81-16391<span>|</span>대표자: 문일룡
+                </p>
+                <p>
+                    ⓒ 2024. jeonsemi All rights reserved.<br>
+                    해당 사이트는 상업용 목적이 아닌 개인 포트폴리오용 사이트입니다.
+                </p>
+                <p>
+                    <a href="#">PRIVACY POLICY</a> <span>|</span> 
+                    <a href="#">TERMS OF SERVICE</a> <span>|</span> 
+                    <a href="#">CUSTOMER </a>
+                    <span>|</span> 
+                    <a href="#">RECRUIT</a>
+                </p>
+            </li>
+            <li class="ftdetailRight">
+                <ul class="ftsns">
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-square-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="ftStore">
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-google-play"></i>
+                            <span>google paly</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-apple"></i>
+                            <span>
+                                app store
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>

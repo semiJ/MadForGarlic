@@ -1,0 +1,88 @@
+:root {
+    /* color */
+    --madColorPalette01 : #ffffff;
+    --madColorPalette02 : #000000;
+    --madColorPalette03 : #CDCAC6;
+    --madColorPalette04 : #EAD8C0;
+    --madColorPalette05 : #AD8350;
+    --madColorPalette06 : #A3171B;
+    --madColorPalette06sub : #e7898c;
+    --madColorPalette07 : transparent;
+}
+
+@media all and (min-width:1024px) {
+    /* brandvideo 영역 */
+    #brandVideo {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    #brandVideo iframe {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100vw;
+        height: 56.25vw;
+        transform: translate(-50%, -50%);
+        border: none;
+    }
+    /* /brandvideo 영역 */
+
+    /* brandnews 영역 */
+
+    #brandNews {
+        background-color: var(--madColorPalette06);
+        width: 100%;
+        height: 340px;
+        text-align: center;
+        padding: 40px;
+        box-sizing: border-box;
+        color: var(--madColorPalette01);
+        line-height: 30px;
+    }
+    
+    .brandNewsDetail {
+        width: 100%;
+        height: 240px;
+        background-color: var(--madColorPalette01);
+        transform: translateY(10px);
+        overflow: hidden;
+        padding: 2rem;
+        box-sizing: border-box;
+    }
+
+    .brandNewsDetail li {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        align-items: center;
+    }
+
+    .brandNewsDetail a {
+        color: var(--madColorPalette02);
+        display: block;
+        font-size: 2em;
+    }
+
+    .brandNewsDetail img {
+        width: 20em;
+    }
+
+
+
+    /* /brandnews 영역 */
+}
+
+@media all and (min-width:768px) {
+
+}
+
+@media all and (min-width:480px) {
+
+}
+
+@media all and (max-width:479px) {
+
+}
