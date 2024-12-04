@@ -243,7 +243,7 @@
 
     header .userJoin {
         position: absolute;
-        right: 14%;
+        right: 6%;
         top: 50%;
         transform: translateY(-50%);
     }
@@ -457,8 +457,17 @@
 
     footer .ftdetailRight .ftsns {
         display: flex;
-        gap: 20px;
+        gap: 40px;
         margin-bottom: 1rem;
+    }
+
+    footer .ftdetailRight .ftsns li {
+        font-size: 2rem;
+    }
+
+    footer .ftdetailRight .ftStore {
+        display: flex;
+        gap: 30px;
     }
 
     footer .ftdetailRight .ftStore li {
@@ -631,7 +640,6 @@
 
     .viewControl {
         display: block;
-        transition: 1s;
     }
     /* /submenu */
 
@@ -725,6 +733,11 @@
         margin-bottom: 1rem;
     }
 
+    footer .ftdetailRight .ftStore {
+        display: flex;
+        gap: 20px;
+    }
+
     footer .ftdetailRight .ftStore li {
         margin-bottom: 1rem;
         background-color: var(--madColorPalette01);
@@ -770,7 +783,7 @@
 
     header .userJoin {
         position: absolute;
-        right: 14%;
+        right: 18%;
         top: 50%;
         transform: translateY(-50%);
     }
@@ -907,7 +920,7 @@
         width: 30px;
         height: 23px;
         position: relative;
-        top: 0px;
+        top: 5px;
         cursor: pointer;
         z-index: 100;
     }
