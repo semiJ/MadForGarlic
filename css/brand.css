@@ -11,6 +11,10 @@
 }
 
 @media all and (min-width:1024px) {
+    #main {
+        overflow: hidden;
+    }
+
     /* brandvideo 영역 */
     #brandVideo {
         position: relative;
@@ -84,12 +88,13 @@
 
     #brandConcept {
         width: 100%;
-        padding: 8em 5em ;
+        padding: 6em 5em ;
     }
 
     .concept {
         width: 80%;
-        margin-bottom: 8em;
+        height: 90%;
+        margin-bottom: 10em;
         margin: 0px auto;
     }
 
@@ -111,7 +116,7 @@
         top: 50%;
         transform: translate(-50%, -50%);
         color: var(--madColorPalette06);
-        font-size: 3em;
+        font-size: 2em;
     }
 
     .concept .imgLeft h3 {
@@ -120,29 +125,28 @@
         top: 50%;
         transform: translate(-50%, -50%);
         color: var(--madColorPalette06);
-        font-size: 3em;
+        font-size: 2em;
     }
 
     .concept .imgRight {
-        border-radius: 30em 1em 1em 1em;
+        border-radius: 15em 1em 1em 1em;
     }
 
     .concept .imgLeft {
-        border-radius: 1em 30em 1em 1em;
+        border-radius: 1em 15em 1em 1em;
     }
 
     .concept .conceptTXT {
         font-size: 1.3rem;
         padding: 3em 0px;
         box-sizing: border-box;
-        line-height: 3em;
+        line-height: 2.5em;
     }
 
     /* brandimg */
     .concept .right01 {
         background: url(./../img/section/brand_concept_img_01.png);
 
-        background-attachment: fixed;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -151,7 +155,6 @@
     .concept .right02 {
         background: url(./../img/section/brand_concept_img_02.png);
 
-        background-attachment: fixed;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -160,7 +163,6 @@
     .concept .left01 {
         background: url(./../img/section/brand_concept_img_03.png);
 
-        background-attachment: fixed;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -169,10 +171,19 @@
     .concept .left02 {
         background: url(./../img/section/brand_concept_img_04.png);
 
-        background-attachment: fixed;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+    }
+
+    .concept .moveLeft {
+        opacity: 0;
+        transform: translateX(-150%);
+    }
+
+    .concept .moveRight {
+        opacity: 0;
+        transform: translateX(150%);
     }
 
 
