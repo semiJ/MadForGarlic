@@ -15,23 +15,22 @@
     #brandVideo {
         position: relative;
         width: 100%;
-        height: 100vh;
+        height: 100vh; /* 화면의 100% 높이를 차지 */
         overflow: hidden;
     }
 
     #brandVideo iframe {
-        position: absolute;
-        top: 50%;
-        left: 50%;
         width: 100%;
-        height: 56.25vw;
-        /* height: 100vh; */
-        transform: translate(-50%, -50%);
+        height: 100%;  /* 세로를 100%로 설정하여 화면에 꽉 차게 */
+        position: absolute;
+        top: 0;
+        left: 0;
         border: none;
         overflow: hidden;
-        object-fit: cover;
+        object-fit: cover; /* 비디오가 화면을 꽉 채우도록 */
     }
     /* /brandvideo 영역 */
+
 
     /* brandnews 영역 */
 
@@ -100,13 +99,9 @@
         gap: 5em;
     }
 
-    .concept img {
-        width: 55em;
+    .concept li {
+        width: 100%;
         height: 20em;
-        object-fit: cover;
-    }
-
-    .concept .imgRight {
         position: relative;
     }
 
@@ -119,14 +114,6 @@
         font-size: 3em;
     }
 
-    .concept .imgRight img {
-        border-radius: 30em 1em 1em 1em;
-    }
-
-    .concept .imgLeft {
-        position: relative;
-    }
-
     .concept .imgLeft h3 {
         position: absolute;
         left: 50%;
@@ -136,7 +123,11 @@
         font-size: 3em;
     }
 
-    .concept .imgLeft img {
+    .concept .imgRight {
+        border-radius: 30em 1em 1em 1em;
+    }
+
+    .concept .imgLeft {
         border-radius: 1em 30em 1em 1em;
     }
 
@@ -146,19 +137,56 @@
         box-sizing: border-box;
     }
 
+    /* brandimg */
+    .concept .right01 {
+        background: url(./../img/section/brand_concept_img_01.png);
+
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .concept .right02 {
+        background: url(./../img/section/brand_concept_img_02.png);
+
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .concept .left01 {
+        background: url(./../img/section/brand_concept_img_03.png);
+
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .concept .left02 {
+        background: url(./../img/section/brand_concept_img_04.png);
+
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
 
     /* /brandconcept 영역 */
 
 }
 
-@media all and (min-width:768px) {
+@media all and (min-width:768px) and (max-width:1023px) {
 
 }
 
-@media all and (min-width:480px) {
+@media all and (min-width:480px) and (max-width:767px) {
 
 }
 
 @media all and (max-width:479px) {
-
+    
 }

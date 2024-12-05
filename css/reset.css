@@ -83,3 +83,26 @@ html .h_hide {
     font-family:'DNFForgedBlade';font-style:normal;font-weight:700;
     src:url('//cdn.df.nexon.com/img/common/font/DNFForgedBlade-Bold.otf')format('opentype')
 }
+
+/* 
+// 사이즈
+
+
+@media all and (min-width:1024px) {
+
+}
+
+@media all and (min-width:768px) and (max-width:1023px) {
+
+}
+
+@media all and (min-width:480px) and (max-width:767px) {
+
+}
+
+@media all and (max-width:479px) {
+    
+}
+
+
+*/
