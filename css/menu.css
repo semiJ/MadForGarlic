@@ -103,7 +103,7 @@
 
     .menuBtnDetail {
         width: 80%;
-        background-color: var(--madColorPalette04);
+        /* background-color: var(--madColorPalette04); */
         margin: 0px auto;
         display: block;
         padding: 5em 0px;
@@ -139,8 +139,53 @@
         transition: 0.5s;
     }
 
-
     /* /menu btn 영역 */
+
+    /* submenu 영역 */
+
+    .subMenu {
+        width: 100%;
+        /* 수정해야함 */
+        height: 10000px;
+        overflow: hidden;
+    }
+
+    .mainPasta {
+        width: 100%;
+        height: 30vh;
+    }
+
+    .mainPasta .mainPastaImg {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: relative;
+    }
+
+    .mainPasta .mainPastaTxT {
+        /* border: 3px solid #eaf; */
+        width: 55em;
+        height: 18em;
+        line-height: 1.5em;
+        background-color: var(--madColorPalette02);
+        color: var(--madColorPalette06);
+
+        padding: 4.5em 4em;
+        box-sizing: border-box;
+
+        position: absolute;
+        left: 5%;
+        top: 98%;
+        /* opacity: 0.8; */
+    }
+
+    .mainPasta .mainPastaTxT h3 {
+        font-size: 3em;
+        margin-bottom: 0.5em;
+    }
+    
+
+    /* /submenu 영역 */
 }
 
 @media all and (min-width:768px) and (max-width:1023px) {
