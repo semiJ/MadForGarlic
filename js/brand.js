@@ -21,25 +21,10 @@ document.addEventListener("DOMContentLoaded", function () {
         let elements = document.querySelectorAll(".moveLeft, .moveRight");
 
         elements.forEach(function (element) {
-            let elementTop = element.getBoundingClientRect().top;
-            let elementBottom = element.getBoundingClientRect().bottom;
-            let elementVisible = windowHeight * 0.9;
 
-            if (elementTop < elementVisible && elementBottom > 0) {
-               
-                element.style.transform = "translateX(0)";
+            element.style.transform = "translateX(0)";
                 element.style.opacity = "1";
-                element.style.transition = "all 1.5s ease-in-out";
-            } else {
-                
-                if (element.classList.contains("moveLeft")) {
-                    element.style.transform = "translateX(-150%)";
-                } else if (element.classList.contains("moveRight")) {
-                    element.style.transform = "translateX(150%)";
-                }
-                element.style.opacity = "0";
-                element.style.transition = "none";
-            }
+                element.style.transition = "all 2s ease-in-out";
         });
     });
 });
