@@ -48,7 +48,6 @@
     .menuBanner li:nth-child(1) {
         background: url(./../img/section/menu/mainMenu.jpg);
 
-        background-attachment: fixed;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -57,7 +56,6 @@
     .menuBanner li:nth-child(2) {
         background: url(./../img/section/menu/setMenu.jpg);
 
-        background-attachment: fixed;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -66,7 +64,6 @@
     .menuBanner li:nth-child(3) {
         background: url(./../img/section/menu/dessertMenu.jpg);
 
-        background-attachment: fixed;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -75,7 +72,6 @@
     .menuBanner li:nth-child(4) {
         background: url(./../img/section/menu/wineMenu.jpg);
 
-        background-attachment: fixed;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -86,13 +82,13 @@
         left: 40px;
         top: 45%;
         font-size: 5em;
-        color: var(--madColorPalette06);
+        color: var(--madColorPalette05);
         transform: translateX(-150%);
         opacity: 0;
     }
 
     .menuBanner h3.menuTitle {
-        transform: translateX(30%);
+        transform: translateX(50%);
         opacity: 1;
         transition: 2s;
     }
@@ -107,10 +103,10 @@
 
     .menuBtnDetail {
         width: 80%;
-        /* background-color: var(--madColorPalette04); */
+        background-color: var(--madColorPalette04);
         margin: 0px auto;
         display: block;
-        padding: 4em 0px;
+        padding: 5em 0px;
     }
 
     .menuBtn ol {
