@@ -11,9 +11,6 @@
 }
 
 @media all and (min-width:1024px) {
-    html {
-        height: 6000px;
-    }
 
     .mainMenuImg {
         width: 100%;
@@ -145,44 +142,94 @@
 
     .subMenu {
         width: 100%;
-        /* 수정해야함 */
-        height: 10000px;
-        overflow: hidden;
     }
 
     .mainPasta {
         width: 100%;
-        height: 30vh;
     }
 
-    .mainPasta .mainPastaImg {
+    .mainPastaImg {
         width: 100%;
-        height: 100%;
-        object-fit: cover;
-        position: relative;
+        height: 30vh;
+        
+        background: url(./../img/section/menu/mainmenu_pasta.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
     }
 
     .mainPasta .mainPastaTxT {
-        /* border: 3px solid #eaf; */
-        width: 55em;
-        height: 18em;
+        width: 50em;
+        max-width: 50%;
+        height: 20em;
         line-height: 1.5em;
         background-color: var(--madColorPalette02);
         color: var(--madColorPalette06);
-
-        padding: 4.5em 4em;
+        padding: 5em 4em;
         box-sizing: border-box;
-
-        position: absolute;
-        left: 5%;
-        top: 98%;
-        /* opacity: 0.8; */
     }
 
     .mainPasta .mainPastaTxT h3 {
         font-size: 3em;
-        margin-bottom: 0.5em;
+        margin-bottom: 1em;
     }
+
+    .mainPasta .pastaMenuList {
+        margin: 0px auto;
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .mainPasta .pastaMenuList .pastaMenuPrice {
+        width: 30%;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+    }
+
+    .mainPasta .pastaMenuList .pastaMenuPrice img {
+        width: 100%;
+        height: 20em;
+        object-fit: cover;
+    }
+    
+    .mainPasta .pastaMenuList .pastaMenuPrice p {
+        margin: 5px 0;
+        font-size: 1.3rem;
+    }
+
+    .mainPasta .pastaMenuList .pastaMenuPrice p:last-child {
+        text-align: right;
+    }
+
+    .chili {
+        color: var(--madColorPalette06);
+    }
+
+    /* 참고해야함 */
+    /* #aiDesign .aibox::after {
+        width: 100%;
+        height: 100%;
+        content: "";
+        background-image: url(./../img/container/designBtnicon.svg);
+        background-repeat: no-repeat;
+        background-size: 100px;
+        background-position: center;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: 0.5s;
+    }
+    
+    #aiDesign .aibox:hover::after {
+        opacity: 0.5;
+    } */
     
 
     /* /submenu 영역 */

@@ -10,5 +10,7 @@ $(function(){
 
         $(".menuBtnDetail li").removeClass("m_btn");
         $(".menuBtnDetail li").eq(i).addClass("m_btn");
-    })
-})
+    });
+
+    
+}) 
