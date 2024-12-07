@@ -10,7 +10,10 @@ $(function(){
 
         $(".menuBtnDetail li").removeClass("m_btn");
         $(".menuBtnDetail li").eq(i).addClass("m_btn");
-    });
 
-    
+        $(".subMenu li").removeClass("s_on");
+        $(".subMenu li").eq(i).addClass("s_on");
+        $("subMenu").removeClass("s_on");
+        $(".subMenu").eq(i).addClass("s_on");
+    });
 }) 

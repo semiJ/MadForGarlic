@@ -101,7 +101,7 @@
     .menuBtnDetail {
         width: 80%;
         /* background-color: var(--madColorPalette04); */
-        margin: 0px auto;
+        margin: 30px auto;
         display: block;
         padding: 5em 0px;
     }
@@ -146,6 +146,7 @@
 
     .mainPasta {
         width: 100%;
+        position: relative;
     }
 
     .mainPastaImg {
@@ -166,70 +167,18 @@
         line-height: 1.5em;
         background-color: var(--madColorPalette02);
         color: var(--madColorPalette06);
-        padding: 5em 4em;
+        padding: 6em 5em;
         box-sizing: border-box;
+        
+        position: absolute;
+        left: 50px;
+        top: 150px;
     }
 
     .mainPasta .mainPastaTxT h3 {
-        font-size: 3em;
+        font-size: 2em;
         margin-bottom: 1em;
     }
-
-    .mainPasta .pastaMenuList {
-        margin: 0px auto;
-        width: 80%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin: 0 auto;
-        overflow: hidden;
-    }
-
-    .mainPasta .pastaMenuList .pastaMenuPrice {
-        width: 30%;
-        box-sizing: border-box;
-        margin-bottom: 20px;
-    }
-
-    .mainPasta .pastaMenuList .pastaMenuPrice img {
-        width: 100%;
-        height: 20em;
-        object-fit: cover;
-    }
-    
-    .mainPasta .pastaMenuList .pastaMenuPrice p {
-        margin: 5px 0;
-        font-size: 1.3rem;
-    }
-
-    .mainPasta .pastaMenuList .pastaMenuPrice p:last-child {
-        text-align: right;
-    }
-
-    .chili {
-        color: var(--madColorPalette06);
-    }
-
-    /* 참고해야함 */
-    /* #aiDesign .aibox::after {
-        width: 100%;
-        height: 100%;
-        content: "";
-        background-image: url(./../img/container/designBtnicon.svg);
-        background-repeat: no-repeat;
-        background-size: 100px;
-        background-position: center;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        opacity: 0;
-        transition: 0.5s;
-    }
-    
-    #aiDesign .aibox:hover::after {
-        opacity: 0.5;
-    } */
     
 
     /* /submenu 영역 */
