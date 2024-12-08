@@ -33,6 +33,7 @@ $(function(){
         }
     });
     
+    
     $(".steak .steakSection li").on("click", function () {
         let i = $(this).index();
         let section = $(this).closest(".steak");
@@ -65,6 +66,24 @@ $(function(){
             target.removeClass("origin");
         } else {
             $(".pizza .subMenuPizza li").removeClass("origin");
+            target.addClass("origin");
+        }
+    });
+
+    $(".steaks .steaksSection li").on("click", function () {
+        let i = $(this).index();
+        let section = $(this).closest(".steaks");
+    
+        
+        let parentClass = $(this).closest("ol").attr("class");
+        let targetClass = parentClass.match(/steakSetMove\d+/)[0].replace("steakSetMove", "subSetMenuView");
+    
+        let target = section.find(`.${targetClass} li`).eq(i);
+    
+        if (target.hasClass("origin")) {
+            target.removeClass("origin");
+        } else {
+            $(".steaks .setSubMenu li").removeClass("origin");
             target.addClass("origin");
         }
     });
