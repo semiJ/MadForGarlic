@@ -10,10 +10,26 @@ $(function(){
 
         $(".menuBtnDetail li").removeClass("m_btn");
         $(".menuBtnDetail li").eq(i).addClass("m_btn");
-
-        $(".subMenu li").removeClass("s_on");
-        $(".subMenu li").eq(i).addClass("s_on");
-        $("subMenu").removeClass("s_on");
-        $(".subMenu").eq(i).addClass("s_on");
     });
+
+    $(".pasat .mainMenuPasta li").on("click", function () {
+        let i = $(this).index();
+        let section = $(this).closest(".pasat");
+    
+        
+        let parentClass = $(this).closest("ol").attr("class");
+        let targetClass = parentClass.match(/mainPastaMove\d+/)[0].replace("mainPastaMove", "subPastaView");
+    
+        let target = section.find(`.${targetClass} li`).eq(i);
+    
+        if (target.hasClass("origin")) {
+            target.removeClass("origin");
+        } else {
+            $(".pasat .subMenuPasta li").removeClass("origin");
+            target.addClass("origin");
+        }
+    });
+    
+    
+    
 }) 

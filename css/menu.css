@@ -133,7 +133,8 @@
 
     .menuBtnDetail li.m_btn {
         color: var(--madColorPalette06);
-        transition: 0.5s;
+        transition: 1s;
+        transform: rotateY(360deg);
     }
 
     /* /menu btn 영역 */
@@ -172,13 +173,52 @@
         
         position: absolute;
         left: 50px;
-        top: 150px;
+        top: 1px;
     }
 
     .mainPasta .mainPastaTxT h3 {
         font-size: 2em;
         margin-bottom: 1em;
     }
+
+    /* menu 영역 */
+
+    .pasat {
+        width: 80%;
+        padding-top: 5em;
+        margin: 0px auto;
+    }
+
+    .pasat .mainMenuPasta {
+        display: flex;
+        justify-content: space-between;
+        gap: 1em;
+    }
+
+    .pasat .mainMenuPasta img {
+        width: 20em;
+        height: 12em;
+        object-fit: cover;
+    }
+
+    .pasat .subMenuPasta {
+        display: flex;
+        justify-content: space-around;
+        margin: 10px 0px;
+    }
+
+    .pasat .subMenuPasta li {
+        width: 100%;
+        height: 30px;
+        text-align: center;
+        background-color: #CDCAC6;
+        display: none;
+    }
+
+    .pasat .subMenuPasta li.origin {
+        display: block !important;
+    }
+    /* /menu 영역 */
     
 
     /* /submenu 영역 */
