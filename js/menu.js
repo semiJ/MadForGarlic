@@ -30,6 +30,22 @@ $(function(){
         }
     });
     
+    $(".steak .steakSection li").on("click", function () {
+        let i = $(this).index();
+        let section = $(this).closest(".steak");
     
+        
+        let parentClass = $(this).closest("ol").attr("class");
+        let targetClass = parentClass.match(/mainSteakMove\d+/)[0].replace("mainSteakMove", "subSteakView");
+    
+        let target = section.find(`.${targetClass} li`).eq(i);
+    
+        if (target.hasClass("origin")) {
+            target.removeClass("origin");
+        } else {
+            $(".steak .subMenuSteak li").removeClass("origin");
+            target.addClass("origin");
+        }
+    });
     
 }) 
