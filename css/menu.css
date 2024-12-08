@@ -12,6 +12,11 @@
 
 @media all and (min-width:1024px) {
 
+    #main {
+        width: 100%;
+        height: 100%;
+    }
+
     .mainMenuImg {
         width: 100%;
         height: 50vh;
@@ -140,9 +145,30 @@
     /* /menu btn 영역 */
 
     /* submenu 영역 */
-
     .subMenu {
         width: 100%;
+        height: 100%;
+        background-color: var(--madColorPalette04);
+    }
+
+    .mainMenuList {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    .mainMenuList > li {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        opacity: 0;
+    }
+
+    .mainMenuList > li.s_on {
+        opacity: 1;
+        transition: 1s;
     }
 
     .mainPasta {
@@ -197,8 +223,7 @@
     .pasat .mainMenuPasta {
         width: 100%;
         display: flex;
-        justify-content: center;
-        gap: 6em;
+        justify-content: space-between;
     }
 
     .pasat .mainMenuPasta img {
@@ -310,11 +335,6 @@
         justify-content: center;
         gap: 6em;
     }
-
-    .steak .mainMenuSteak li {
-        width: 80%;
-    }
-
     .steak .mainMenuSteak img {
         width: 32em;
         height: 20em;
@@ -360,6 +380,119 @@
     }
 
     .steak .subMenuSteak li.origin {
+        display: block !important;
+    }
+
+    
+
+    /* /menu 영역 */
+
+    /* 피자 영역 */
+    .mainPizza {
+        width: 100%;
+        position: relative;
+    }
+
+    .mainPizzaImg {
+        width: 100%;
+        height: 30vh;
+        
+        background: url(./../img/section/menu/mainmenu_pizza.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .mainPizza .mainPizzaTxT {
+        width: 50em;
+        max-width: 50%;
+        height: 20em;
+        line-height: 1.5em;
+        background-color: var(--madColorPalette06sub);
+        color: var(--madColorPalette06);
+        padding: 4em 5em;
+        box-sizing: border-box;
+        
+        position: absolute;
+        left: 5%;
+        top: 40%;
+    }
+
+    .mainPizza .mainPizzaTxT h3 {
+        font-size: 2em;
+        margin-bottom: 1em;
+    }
+
+    /* menu 영역 */
+
+    .pizza {
+        width: 80%;
+        padding: 20em 0px;
+        box-sizing: border-box;
+        margin: 0px auto;
+    }
+
+    .pizzaSection {
+        width: 100%;
+    }
+
+    .pizza .mainMenuPizza {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 6em;
+    }
+
+    .pizza .mainMenuPizza li {
+        width: 80%;
+    }
+
+    .pizza .mainMenuPizza img {
+        width: 32em;
+        height: 20em;
+        object-fit: cover;
+    }
+
+    .pizza .subMenuPizza {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 10px 0px;
+    }
+
+    .pizza .subMenuPizza li {
+        width: 100%;
+        height: 100%;
+        background-color: var(--madColorPalette04);
+        display: none;
+        padding: 5em;
+        box-sizing: border-box;
+        text-align: center;
+        align-items: center;
+    }
+
+    .pizza .subMenuPizza li img {
+        width: 60em;
+        height: 40em;
+        object-fit: cover;
+        margin-bottom: 2em;
+        border-radius: 20px;
+    }
+
+    .pizza .subMenuPizza li p {
+        font-size: 1.5em;
+        text-align: left;
+        color: var(--madColorPalette06);
+    }
+
+    .pizza .subMenuPizza li span {
+        display: block;
+        text-align: right;
+        margin-bottom: 1.2em;
+    }
+
+    .pizza .subMenuPizza li.origin {
         display: block !important;
     }
 

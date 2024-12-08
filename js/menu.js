@@ -10,6 +10,9 @@ $(function(){
 
         $(".menuBtnDetail li").removeClass("m_btn");
         $(".menuBtnDetail li").eq(i).addClass("m_btn");
+
+        $(".mainMenuList > li").removeClass("s_on");
+        $(".mainMenuList > li").eq(i).addClass("s_on");
     });
 
     $(".pasat .mainMenuPasta li").on("click", function () {
@@ -44,6 +47,24 @@ $(function(){
             target.removeClass("origin");
         } else {
             $(".steak .subMenuSteak li").removeClass("origin");
+            target.addClass("origin");
+        }
+    });
+
+    $(".pizza .pizzaSection li").on("click", function () {
+        let i = $(this).index();
+        let section = $(this).closest(".pizza");
+    
+        
+        let parentClass = $(this).closest("ol").attr("class");
+        let targetClass = parentClass.match(/mainPizzaMove\d+/)[0].replace("mainPizzaMove", "subPizzaView");
+    
+        let target = section.find(`.${targetClass} li`).eq(i);
+    
+        if (target.hasClass("origin")) {
+            target.removeClass("origin");
+        } else {
+            $(".pizza .subMenuPizza li").removeClass("origin");
             target.addClass("origin");
         }
     });
