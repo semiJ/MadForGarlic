@@ -17,7 +17,6 @@ $(function(){
 
     // 메뉴 디스크립션 열릴 때 높이 변경
     $(".mainMenuPasta li, .mainMenuSteak li, .mainMenuPizza li").on("click", function(){
-        let i = $(this).index();
 
         $(".subMenu").removeClass("hei");
         $(".subMenu").addClass("hei");

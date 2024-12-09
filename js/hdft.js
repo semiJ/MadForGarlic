@@ -22,4 +22,6 @@ $(window).on("scroll",function(){
         $("#banner .floaing").toggleClass("rmv");
     });
 
+    
+
 });

@@ -10,8 +10,6 @@ $(function() {
 
 
     // brandconcept 움직임
-    
-
 });
 
 document.addEventListener("DOMContentLoaded", function () {
