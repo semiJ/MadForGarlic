@@ -231,7 +231,7 @@
     }
 
     .pasat .mainMenuPasta img {
-        width: 22em;
+        width: 32em;
         height: 15em;
         object-fit: cover;
     }
@@ -336,11 +336,12 @@
     .steak .mainMenuSteak {
         width: 100%;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         gap: 6em;
     }
     .steak .mainMenuSteak img {
-        width: 36em;
+        width: 50em;
+        /* width: 100%; */
         height: 20em;
         object-fit: cover;
     }
@@ -453,8 +454,8 @@
     }
 
     .pizza .mainMenuPizza img {
-        width: 36em;
-        height: 20em;
+        width: 100%;
+        height: 22em;
         object-fit: cover;
     }
 
@@ -551,17 +552,6 @@
         width: 100%;
     }
 
-    .signature .signatureSetMove02 {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .signature .signatureSetMove02 img {
-        width: 60em;
-        height: 40em;
-        object-fit: cover;
-    }
-
     .signature .signatureSetMenu {
         width: 100%;
         display: flex;
@@ -574,8 +564,8 @@
     }
 
     .signature .signatureSetMenu img {
-        width: 22em;
-        height: 15em;
+        width: 100%;
+        height: 20em;
         object-fit: cover;
     }
 
@@ -618,6 +608,116 @@
     }
 
     .signature .subSignatureSet li.origin {
+        display: block !important;
+    }
+    /* /menu 영역 */
+
+    /* 런치세츠 영역 */
+    .lunchSet {
+        width: 100%;
+        position: relative;
+    }
+
+    .lunchSetImg {
+        width: 100%;
+        height: 30vh;
+        
+        background: url(./../img/section/menu/lunch_set.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .lunchSet .lunchSetTxT {
+        width: 50em;
+        max-width: 50%;
+        height: 20em;
+        line-height: 1.5em;
+        background-color: var(--madColorPalette05);
+        color: var(--madColorPalette06);
+        padding: 4em 5em;
+        box-sizing: border-box;
+        
+        position: absolute;
+        left: 5%;
+        top: 40%;
+    }
+
+    .lunchSet .lunchSetTxT h3 {
+        font-size: 2em;
+        margin-bottom: 1em;
+    }
+
+    /* menu 영역 */
+
+    .lunch {
+        width: 80%;
+        padding: 15em 0px;
+        box-sizing: border-box;
+        margin: 0px auto;
+    }
+
+    .lunchSection {
+        width: 100%;
+    }
+
+    .lunch .lunchSetMenu {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 6em;
+    }
+
+    .lunch .lunchSetMenu li {
+        width: 80%;
+    }
+
+    .lunch .lunchSetMenu img {
+        width: 100%;
+        height: 20em;
+        object-fit: cover;
+    }
+
+    .lunch .subLunchSet {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 10px 0px;
+    }
+
+    .lunch .subLunchSet li {
+        width: 100%;
+        height: 100%;
+        background-color: var(--madColorPalette04);
+        display: none;
+        padding: 3em;
+        box-sizing: border-box;
+        text-align: center;
+        align-items: center;
+    }
+
+    .lunch .subLunchSet li img {
+        width: 60em;
+        height: 40em;
+        object-fit: cover;
+        margin-bottom: 2em;
+        border-radius: 20px;
+    }
+
+    .lunch .subLunchSet li p {
+        font-size: 1.5em;
+        text-align: left;
+        color: var(--madColorPalette06);
+    }
+
+    .lunch .subLunchSet li span {
+        display: block;
+        text-align: right;
+        margin-bottom: 1.2em;
+    }
+
+    .lunch .subLunchSet li.origin {
         display: block !important;
     }
     /* /menu 영역 */

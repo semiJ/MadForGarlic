@@ -48,6 +48,7 @@ $(function(){
             $(".pizza .subMenuPizza li").removeClass("origin");
             $(".steak .subMenuSteak li").removeClass("origin");
             $(".signature .subSignatureSet li").removeClass("origin");
+            $(".steak .subLunchSet li").removeClass("origin");
         }
     });
 
@@ -75,6 +76,7 @@ $(function(){
             $(".pasat .subMenuPasta li").removeClass("origin");
             $(".pizza .subMenuPizza li").removeClass("origin");
             $(".signature .subSignatureSet li").removeClass("origin");
+            $(".steak .subLunchSet li").removeClass("origin");
         }
     });
 
@@ -102,6 +104,7 @@ $(function(){
             $(".pasat .subMenuPasta li").removeClass("origin");
             $(".steak .subMenuSteak li").removeClass("origin");
             $(".signature .subSignatureSet li").removeClass("origin");
+            $(".steak .subLunchSet li").removeClass("origin");
         }
     });
 
@@ -128,6 +131,35 @@ $(function(){
             // 다른 메뉴가 열려 있으면 닫기
             $(".pasat .subMenuPasta li").removeClass("origin");
             $(".pizza .subMenuPizza li").removeClass("origin");
+            $(".steak .subMenuSteak li").removeClass("origin");
+            $(".steak .subLunchSet li").removeClass("origin");
+        }
+    });
+
+    // 런치 세트 메뉴 클릭 시 디스크립션 노출
+    $(".lunch .lunchSection li").on("click", function () {
+        let i = $(this).index();
+        let section = $(this).closest(".lunch");
+
+        let parentClass = $(this).closest("ol").attr("class");
+        let targetClass = parentClass.match(/lunchSetMove\d+/)[0].replace("lunchSetMove", "lunchSubMenuView");
+
+        let target = section.find(`.${targetClass} li`).eq(i);
+
+        // 세트 메뉴 디스크립션 열기/닫기
+        if (target.hasClass("origin")) {
+            target.removeClass("origin");
+            section.find(".subLunchSet").removeClass("origin");
+        } else {
+            $(".lunch .subLunchSet li").removeClass("origin");
+            section.find(".subLunchSet li").removeClass("origin");
+            target.addClass("origin");
+            section.find(".subLunchSet").addClass("origin");
+
+            // 다른 메뉴가 열려 있으면 닫기
+            $(".pasat .subMenuPasta li").removeClass("origin");
+            $(".pizza .subMenuPizza li").removeClass("origin");
+            $(".signature .subSignatureSet li").removeClass("origin");
             $(".steak .subMenuSteak li").removeClass("origin");
         }
     });
