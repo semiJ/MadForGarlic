@@ -20,7 +20,7 @@
 
   #membershipBanner {
     width: 100%;
-    height: 50vh;
+    height: 100vh;
     position: relative;
     overflow: hidden;
   }
@@ -131,10 +131,14 @@
     left: 0px;
     align-content: center;
     opacity: 0;
-    transform: translateX(-500px);
+    transform: translateX(-100px);
     transition: all 1s;
     color: var(--madColorPalette06);
     background: var(--madColorPalette05);
+  }
+
+  .mainTXT {
+    transform: translateX(5%);
   }
 
   .mainmembership h3 {

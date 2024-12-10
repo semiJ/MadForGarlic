@@ -1,5 +1,4 @@
 $(function () {
-
     let viewHeight = document.querySelector('html').clientHeight;
 
         const content = document.querySelectorAll('.subcontent');
@@ -24,5 +23,4 @@ $(function () {
             mainmem[content.length - 1].classList.remove('opacity1');
         }
         });
-
 });
