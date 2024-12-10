@@ -16,10 +16,8 @@
 
     #membershipBanner {
         width: 100vw;
-        height: 100vh;
+        height: 50vh;
         overflow: hidden;
-
-        position: relative;
 
     }
 
@@ -34,6 +32,20 @@
         position: absolute;
         top: 0px;
         left: 0px;
+
+        animation: movescl 4s forwards;
+    }
+
+    @keyframes movescl {
+      0% {
+        opacity: 0;
+        transform: scale(2);
+      };
+
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      };
     }
 
     #membershipBanner .memTXT {
@@ -78,21 +90,82 @@
         };
       }
 
-      @keyframes moveToRight {
-        0% {
-          opacity: 0;
-          transform: translateX(500px);
-        };
+    @keyframes moveToRight {
+      0% {
+        opacity: 0;
+        transform: translateX(500px);
+      };
 
-        100% {
-          opacity: 1;
-          transform: translateX(0);
-        };
-      }
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      };
+    }
 
       /* /membershipBanner 영역 */
 
       /* membershipContent 영역 */
+
+      .memsection{
+        width: 100vw;
+        height: 400vh;
+        display: flex;
+        }
+
+      .sticky{
+        position: sticky;
+        width: 50vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+      }
+
+      .img{
+        position: absolute;
+        width: 50vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        align-content: center;
+        text-align: center;
+        font-size: 60px;
+        opacity: 0;
+        transition: all 0.3s;
+      }
+
+      .img:nth-child(1){
+        background-color: aqua;
+      }
+
+      .img:nth-child(2){
+        background-color: red;
+      }
+
+      .img:nth-child(3){
+        background-color: yellow;
+      }
+
+      .img:nth-child(4){
+        background-color: green;
+      }
+
+      .content-box{
+        width: 50vw;
+        height: 100vh;
+      }
+
+      .content{
+        width: 50vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 60px;
+      }
+
+      .opacity1{
+        opacity: 1;
+      }
       
       /* /membershipContent 영역 */
 
