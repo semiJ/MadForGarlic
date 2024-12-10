@@ -22,4 +22,5 @@ $(function () {
         img[content.length - 1].classList.remove('opacity1');
         }
         });
+
 });

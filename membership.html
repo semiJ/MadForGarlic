@@ -8,12 +8,13 @@
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/jquery.transform2d.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="js/hdft.js"></script>
     <script src="js/membership.js"></script>
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/hdftstyle.css">
     <link rel="stylesheet" href="css/membership.css">
+    <link rel="stylesheet" href="css/hdftstyle.css">
     <link rel="icon" type="image/ico" href="img/header/faivcon.ico">
 </head>
 <body>
@@ -31,7 +32,7 @@
             <ul class="headerMenu">
                 <li><a href="brand.html">BRAND</a></li>
                 <li><a href="menu.html">MENU</a></li>
-                <li><a href="membership.html">MEMBERSHIP</a></li>
+                <li class="membershipBtn"><a href="membership.html">MEMBERSHIP</a></li>
                 <li><a href="event.html">EVENT</a></li>
                 <li><a href="customer.html">CUSTOMER</a></li>
                 <li><a class="rsvt" href="#">RESERVATION</a></li>
@@ -68,51 +69,56 @@
     </header>
 
     <div id="main">
-        <section id="membershipBanner">
-            <h2 class="h_hide">멤버쉽 배너</h2>
-            <div class="memBanner">
-                <span class="h_hide">
-                    배너 배경 이미지
-                </span>
-            </div>
-            <div class="memTXT">
-                <h3>MEMBERSHIP</h3>
-                <p>
-                    모든 브랜드에서 적립하고 혜택 누리는 올인원 멤버십 M CLUB
-                </p>
-            </div>
-        </section>
-        <section class="memsection">
-            <div class="sticky">
-              <div class="img opacity1">
-                <img src="img/section/mainmembership01.png" alt="">
-                <p>하이</p>
-              </div>
-              <div class="img">
-                <p><img src="img/section/mainmembership02.jpg" alt=""></p>
-              </div>
-              <div class="img">
-                <p><img src="img/section/mainmembership03.jpg" alt=""></p>
-              </div>
-              <div class="img">
-                <p><img src="img/section/mainmembership04.png" alt=""></p>
-              </div>
-            </div>
-            <div class="content-box">
-              <div class="content">
-                <p><img src="img/section/submembership01.png" alt=""></p>
-              </div>
-              <div class="content">
-                <p><img src="img/section/submembership02.png" alt=""></p>
-              </div>
-              <div class="content">
-                <p><img src="img/section/submembership03.png" alt=""></p>
-              </div>
-              <div class="content">
-                <p><img src="img/section/submembership04.png" alt=""></p>
-              </div>
-            </div>
-        </section>
+      <section id="membershipBanner">
+        <h2 class="h_hide">멤버쉽 배너</h2>
+        <div class="memBanner">
+            <span class="h_hide">
+                배너 배경 이미지
+            </span>
+        </div>
+        <div class="memTXT">
+            <h3>MEMBERSHIP</h3>
+            <p>
+                모든 브랜드에서 적립하고 혜택 누리는 올인원 멤버십 M CLUB
+            </p>
+        </div>
+      </section>
+      <section class="section">
+        <div class="sticky">
+          <div class="img opacity1">
+            <p><img src="img/section/mainmembership01.png" alt=""></p>
+          </div>
+          <div class="img">
+            <p><img src="img/section/mainmembership02.jpg" alt=""></p>
+          </div>
+          <div class="img">
+            <p><img src="img/section/mainmembership03.jpg" alt=""></p>
+          </div>
+          <div class="img">
+            <p><img src="img/section/mainmembership04.png" alt=""></p>
+          </div>
+          <div class="img">
+            <p><img src="img/section/mainmembership05.jpg" alt=""></p>
+          </div>
+        </div>
+        <div class="content-box">
+          <div class="content">
+            <p><img src="img/section/submembership01.png" alt=""></p>
+          </div>
+          <div class="content">
+            <p><img src="img/section/submembership02.png" alt=""></p>
+          </div>
+          <div class="content">
+            <p><img src="img/section/submembership03.png" alt=""></p>
+          </div>
+          <div class="content">
+            <p><img src="img/section/submembership04.png" alt=""></p>
+          </div>
+          <div class="content">
+            <p><img src="img/section/submembership05.jpg" alt=""></p>
+          </div>
+        </div>
+      </section>
     </div>
 
     <footer>
@@ -178,3 +184,4 @@
     </footer>
 </body>
 </html>
+
