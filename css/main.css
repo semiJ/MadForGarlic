@@ -459,6 +459,15 @@
             object-fit: cover;
         }
 
+        .membershipBenefit li {
+            transform: translateY(500%);
+        }
+
+        .membershipBenefit li.memveiw {
+            transform: translateY(0%);
+            transition: 2s;
+        }
+
 
     /* /mainMembership 영역 */
 

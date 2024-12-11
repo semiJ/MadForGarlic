@@ -1,5 +1,7 @@
 $(function(){
-    gsap.registerPlugin(ScrollTrigger);
+    let baseline = -600;
+
+    let mainMember = $("#mainMembership").offset().top + baseline;
 
     //banner 이미지 자동 슬라이드
 
@@ -141,7 +143,18 @@ $(function(){
         });
 
 
+        //멤버쉽 하나씩
 
+        $(window).on("scroll", function(){
+            let memtop = $(this).scrollTop();
+            console.log(memtop);
+
+            if(memtop >= mainMember) {
+                $(".membershipBenefit li").addClass("memveiw");
+            } else {
+                $(".membershipBenefit li").removeClass("memveiw");
+            };
+        });
 
 
 
