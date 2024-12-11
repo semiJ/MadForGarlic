@@ -47,12 +47,7 @@
         box-sizing: border-box;
         color: var(--madColorPalette01);
         line-height: 30px;
-
-        background: url(./../img/section/brandNewsImg03.jpg);
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
+        background-color: var(--madColorPalette02);
     }
     
     .brandNewsDetail {

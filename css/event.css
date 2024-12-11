@@ -1,0 +1,27 @@
+:root {
+    /* color */
+    --madColorPalette01 : #ffffff;
+    --madColorPalette02 : #000000;
+    --madColorPalette03 : #CDCAC6;
+    --madColorPalette04 : #EAD8C0;
+    --madColorPalette05 : #AD8350;
+    --madColorPalette06 : #A3171B;
+    --madColorPalette06sub : #e7898c;
+    --madColorPalette07 : transparent;
+}
+
+@media all and (min-width:1024px) {
+    
+}
+
+@media all and (min-width:768px) and (max-width:1023px) {
+
+}
+
+@media all and (min-width:480px) and (max-width:767px) {
+
+}
+
+@media all and (max-width:479px) {
+    
+}
