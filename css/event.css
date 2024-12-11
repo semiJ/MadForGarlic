@@ -104,6 +104,50 @@
       }
     
       /* /eventMainBanner 영역 */
+      
+      /* eventDateil 영역 */
+
+    #main {
+        width: 100%;
+        overflow: hidden;
+
+        position: relative;
+    }
+        
+    .eventDateil {
+        width: 100%;
+        height: 50vh;
+        overflow: hidden;
+        padding: 3em;
+        box-sizing: border-box;
+    }
+    
+    .eventDateil ol {
+        display: flex;
+        gap: 40px; 
+        transition: transform 2s ease-in-out; 
+    }
+    
+    .eventDateil li {
+        flex-shrink: 0; 
+        position: relative;
+    }
+    
+    .eventDateil li img {
+        width: 40em;
+        object-fit: cover;
+    }
+
+    .eventDateil .eveTXT {
+        position: relative;
+    }
+
+    .eventDateil .eveTXT li img:hover {
+        opacity: 0.5;
+    }
+
+    /* /eventDateil 영역 */
+      
 }
 
 @media all and (min-width:768px) and (max-width:1023px) {
