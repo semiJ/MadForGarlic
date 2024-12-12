@@ -114,7 +114,7 @@
         position: relative;
     }
         
-    .eventDateil {
+    #eventDateil {
         width: 100%;
         height: 50vh;
         overflow: hidden;
@@ -122,31 +122,73 @@
         box-sizing: border-box;
     }
     
-    .eventDateil ol {
+    #eventDateil ol {
         display: flex;
         gap: 40px; 
         transition: transform 2s ease-in-out; 
     }
     
-    .eventDateil li {
+    #eventDateil li {
         flex-shrink: 0; 
         position: relative;
     }
     
-    .eventDateil li img {
+    #eventDateil li img {
         width: 40em;
         object-fit: cover;
     }
 
-    .eventDateil .eveTXT {
+    #eventDateil .eveTXT {
         position: relative;
     }
 
-    .eventDateil .eveTXT li img:hover {
+    #eventDateil .eveTXT li img:hover {
         opacity: 0.5;
     }
 
     /* /eventDateil 영역 */
+
+    /* eventCard 영역 */
+
+    .eventCard {
+      width: 100%;
+      
+      /* background-color: #e7898c; */
+    }
+
+    .eventCard ul {
+      width: 120%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 6em 4em;
+      box-sizing: border-box;
+      overflow: hidden;
+      margin: 0px auto;
+
+      background-color: #A3171B;
+    }
+
+    .eventCard li {
+      width: 30%;
+      height: 700px;
+      margin: 0px 0.5rem;
+      word-wrap: break-word;
+      border: 1px solid var(--madColorPalette06);
+      
+      background-color: #AD8350;
+    }
+
+    .eventCard li img {
+      width: 25em;
+      padding: 0.5rem;
+      box-sizing: border-box;
+      margin-left: 6em;
+    }
+
+        
+    /* /eventCard 영역 */
       
 }
 
