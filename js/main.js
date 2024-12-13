@@ -155,7 +155,4 @@ $(function(){
                 $(".membershipBenefit li").removeClass("memveiw");
             };
         });
-
-
-
 })

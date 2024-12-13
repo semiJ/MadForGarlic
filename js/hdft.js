@@ -22,6 +22,17 @@ $(window).on("scroll",function(){
         $("#banner .floaing").toggleClass("rmv");
     });
 
-    
+    // footer top btn
+
+    $(window).on("scroll", function(){
+        let viewTop = $(this).scrollTop();
+        // console.log(viewTop);
+
+        if(viewTop >= 100) {
+            $(".topBtn").addClass("ftTopbtn");
+        } else {
+            $(".topBtn").removeClass("ftTopbtn");
+        };
+    });
 
 });

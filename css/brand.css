@@ -187,13 +187,339 @@
 }
 
 @media all and (min-width:768px) and (max-width:1023px) {
+    #main {
+        overflow: hidden;
+    }
 
+    /* brandvideo 영역 */
+    #brandVideo {
+        position: relative;
+        width: 100%;
+        height: 100vh; /* 화면의 100% 높이를 차지 */
+        overflow: hidden;
+    }
+
+    #brandVideo iframe {
+        width: 100%;
+        height: 100%;  /* 세로를 100%로 설정하여 화면에 꽉 차게 */
+        position: absolute;
+        top: 0;
+        left: 0;
+        border: none;
+        overflow: hidden;
+        object-fit: cover; /* 비디오가 화면을 꽉 채우도록 */
+    }
+    /* /brandvideo 영역 */
+
+
+    /* brandnews 영역 */
+
+    #brandNews {
+        /* background-color: var(--madColorPalette06); */
+        width: 100%;
+        height: 50vh;
+        text-align: center;
+        padding: 40px;
+        box-sizing: border-box;
+        color: var(--madColorPalette01);
+        line-height: 30px;
+        background-color: var(--madColorPalette02);
+    }
+    
+    .brandNewsDetail {
+        width: 100%;
+        height: 185px;
+        background-color: var(--madColorPalette01);
+        padding-left: 2rem;
+        box-sizing: border-box;
+        transform: translateY(50%);
+        overflow: hidden;
+    }
+
+    .brandNewsDetail li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .brandNewsDetail a {
+        color: var(--madColorPalette02);
+        display: block;
+        font-size: 2em;
+        color: var(--madColorPalette06);
+    }
+
+    .brandNewsDetail img {
+        width: 20em;
+    }
+
+    /* /brandnews 영역 */
+
+    /* brandconcept 영역 */
+
+    #brandConcept {
+        width: 100%;
+        padding: 3em 2em ;
+        box-sizing: border-box;
+    }
+
+    .concept {
+        width: 80%;
+        height: 90%;
+        margin-bottom: 5em;
+        margin: 0px auto;
+    }
+
+    .concept ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .concept li {
+        width: 100%;
+        height: 20em;
+        position: relative;
+    }
+
+    .concept .imgRight h3 {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        color: var(--madColorPalette06);
+        font-size: 1.5em;
+    }
+
+    .concept .imgLeft h3 {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        color: var(--madColorPalette06);
+        font-size: 2em;
+    }
+
+    .concept .imgRight {
+        border-radius: 15em 1em 1em 1em;
+    }
+
+    .concept .imgLeft {
+        border-radius: 1em 15em 1em 1em;
+    }
+
+    .concept .conceptTXT {
+        font-size: 1.3rem;
+        padding: 1em 0px;
+        box-sizing: border-box;
+        line-height: 2.5em;
+    }
+
+    /* brandimg */
+    .concept .right01 {
+        background: url(./../img/section/brand_concept_img_01.png);
+
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .concept .right02 {
+        background: url(./../img/section/brand_concept_img_03.png);
+
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .concept .left01 {
+        background: url(./../img/section/brand_concept_img_02.png);
+
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .concept .left02 {
+        background: url(./../img/section/brand_concept_img_04.png);
+
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .concept .moveLeft {
+        opacity: 0;
+        transform: translateX(-150%);
+    }
+
+    .concept .moveRight {
+        opacity: 0;
+        transform: translateX(150%);
+    }
+
+
+    /* /brandconcept 영역 */
 }
 
 @media all and (min-width:480px) and (max-width:767px) {
+    #main {
+        overflow: hidden;
+    }
 
-}
+    /* brandvideo 영역 */
+    #brandVideo {
+        position: relative;
+        width: 100%;
+        height: 30vh; /* 화면의 100% 높이를 차지 */
+        overflow: hidden;
+    }
 
-@media all and (max-width:479px) {
+    #brandVideo iframe {
+        width: 100%;
+        height: 100%;  /* 세로를 100%로 설정하여 화면에 꽉 차게 */
+        position: absolute;
+        top: 0;
+        left: 0;
+        border: none;
+        overflow: hidden;
+        object-fit: cover; /* 비디오가 화면을 꽉 채우도록 */
+    }
+    /* /brandvideo 영역 */
+
+
+    /* brandnews 영역 */
+
+    #brandNews {
+        /* background-color: var(--madColorPalette06); */
+        width: 100%;
+        height: 30vh;
+        text-align: center;
+        padding: 10px;
+        box-sizing: border-box;
+        color: var(--madColorPalette01);
+        line-height: 30px;
+        background-color: var(--madColorPalette02);
+    }
     
+    .brandNewsDetail {
+        width: 100%;
+        height: 225px;
+        background-color: var(--madColorPalette01);
+        padding-left: 1rem;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    .brandNewsDetail a {
+        color: var(--madColorPalette02);
+        display: block;
+        color: var(--madColorPalette06);
+    }
+
+    .brandNewsDetail img {
+        width: 20em;
+    }
+
+    /* /brandnews 영역 */
+
+    /* brandconcept 영역 */
+
+    #brandConcept {
+        width: 100%;
+        padding: 1.5em 0px;
+    }
+
+    .concept {
+        width: 80%;
+        height: 90%;
+        margin: 0px auto;
+    }
+
+    .concept li {
+        width: 100%;
+        height: 10em;
+        position: relative;
+    }
+
+    .concept .imgRight h3 {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        color: var(--madColorPalette06);
+        font-size: 1.5em;
+    }
+
+    .concept .imgLeft h3 {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        color: var(--madColorPalette06);
+        font-size: 1.5em;
+    }
+
+    .concept .imgRight {
+        border-radius: 15em 1em 1em 1em;
+    }
+
+    .concept .imgLeft {
+        border-radius: 1em 15em 1em 1em;
+    }
+
+    .concept .conceptTXT {
+        font-size: 0.8em;
+        line-height: 2.8em;
+    }
+
+    /* brandimg */
+    .concept .right01 {
+        background: url(./../img/section/brand_concept_img_01.png);
+
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .concept .right02 {
+        background: url(./../img/section/brand_concept_img_03.png);
+
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .concept .left01 {
+        background: url(./../img/section/brand_concept_img_02.png);
+
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .concept .left02 {
+        background: url(./../img/section/brand_concept_img_04.png);
+
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .concept .moveLeft {
+        opacity: 0;
+        transform: translateX(-150%);
+    }
+
+    .concept .moveRight {
+        opacity: 0;
+        transform: translateX(150%);
+    }
+
+    #brandConcept .brandMoStyle ul {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+
+    /* /brandconcept 영역 */
 }

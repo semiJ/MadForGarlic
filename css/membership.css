@@ -134,7 +134,7 @@
     transform: translateX(-100px);
     transition: all 1s;
     color: var(--madColorPalette06);
-    background: var(--madColorPalette05);
+    background-color: var(--madColorPalette01);
   }
 
   .mainTXT {
@@ -166,7 +166,6 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: var(--madColorPalette06);
   }
 
   .opacity1{
@@ -177,13 +176,329 @@
 }
 
 @media all and (min-width:768px) and (max-width:1023px) {
+  #main {
+    width: 100%;
+  }
+      
+  /* membershipBanner 영역 */
+
+  #membershipBanner {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+
+  #membershipBanner .memBanner {
+    width: 100%;
+    height: 100%;
+    background: url(./../img/section/membership_banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    animation: movescl 4s forwards;
+  }
+
+  @keyframes movescl {
+    0% {
+      opacity: 0;
+      transform: scale(2);
+    };
+
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    };
+  }
+
+  #membershipBanner .memTXT {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+
+      transform: translate(-50%, -50%);
+  }
+
+  #membershipBanner .memTXT h3 {
+      font-size: 5em;
+      text-align: center;
+      letter-spacing: 1rem;
+      color: var(--madColorPalette01);
+
+      animation: moveToLeft 2s forwards;
+  }
+
+  #membershipBanner .memTXT p {
+      font-size: 1.3em;
+      text-align: center;
+      background-color: var(--madColorPalette03);
+      color: var(--madColorPalette06);
+
+      animation: moveToRight 2s forwards;
+  }
+
+  @keyframes moveToLeft {
+      0% {
+        opacity: 0;
+        transform: translateX(-500px);
+      };
+
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      };
+    }
+
+  @keyframes moveToRight {
+    0% {
+      opacity: 0;
+      transform: translateX(500px);
+    };
+
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    };
+  }
+
+  /* /membershipBanner 영역 */
+
+  .membershipDetail {
+    width: 100%;
+    height: 500vh;
+    display: flex;
+    justify-content: center;
+  }
+
+  .membershipDetail img {
+    width: 100%;
+  }
+
+  .sticky {
+    position: sticky;
+    width: 50%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+  }
+
+  .mainmembership {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0px;
+    left: 0px;
+    align-content: center;
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 1s;
+    color: var(--madColorPalette06);
+    background-color: var(--madColorPalette01);
+  }
+
+  .mainTXT {
+    transform: translateX(5%);
+  }
+
+  .mainmembership h3 {
+    font-size: 2em;
+  }
+
+  .mainmembership p {
+    font-size: 1.5em;
+    margin: 0.8em 0px;
+  }
+
+  .mainmembership span {
+    font-size: 1em;
+  }
+
+  .submembership {
+    width: 50%;
+    height: 100vh;
+  }
+
+  .subcontent {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .opacity1{
+    opacity: 1;
+    transform: translateX(0px);
+  }
 
 }
 
 @media all and (min-width:480px) and (max-width:767px) {
+  #main {
+    width: 100%;
+  }
+      
+  /* membershipBanner 영역 */
 
-}
+  #membershipBanner {
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    overflow: hidden;
+  }
 
-@media all and (max-width:479px) {
-    
+  #membershipBanner .memBanner {
+    width: 100%;
+    height: 100%;
+    background: url(./../img/section/membership_banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    animation: movescl 4s forwards;
+  }
+
+  @keyframes movescl {
+    0% {
+      opacity: 0;
+      transform: scale(2);
+    };
+
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    };
+  }
+
+  #membershipBanner .memTXT {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+
+      transform: translate(-50%, -50%);
+  }
+
+  #membershipBanner .memTXT h3 {
+      font-size: 3em;
+      text-align: center;
+      letter-spacing: 1rem;
+      color: var(--madColorPalette01);
+
+      animation: moveToLeft 2s forwards;
+  }
+
+  #membershipBanner .memTXT p {
+      font-size: 1em;
+      text-align: center;
+      background-color: var(--madColorPalette03);
+      color: var(--madColorPalette06);
+
+      animation: moveToRight 2s forwards;
+  }
+
+  @keyframes moveToLeft {
+      0% {
+        opacity: 0;
+        transform: translateX(-500px);
+      };
+
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      };
+    }
+
+  @keyframes moveToRight {
+    0% {
+      opacity: 0;
+      transform: translateX(500px);
+    };
+
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    };
+  }
+
+  /* /membershipBanner 영역 */
+
+  .membershipDetail {
+    width: 100%;
+    height: 500vh;
+    display: flex;
+    justify-content: center;
+  }
+
+  .membershipDetail img {
+    width: 100%;
+  }
+
+  .sticky {
+    position: sticky;
+    width: 50%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+  }
+
+  .mainmembership {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0px;
+    left: 0px;
+    align-content: center;
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 1s;
+    color: var(--madColorPalette06);
+    background-color: var(--madColorPalette01);
+  }
+
+  .mainTXT {
+    transform: translateX(5%);
+  }
+
+  .mainmembership h3 {
+    font-size: 2em;
+  }
+
+  .mainmembership p {
+    font-size: 1.5em;
+    margin: 0.8em 0px;
+  }
+
+  .mainmembership span {
+    font-size: 1em;
+  }
+
+  .submembership {
+    width: 50%;
+    height: 100vh;
+  }
+
+  .subcontent {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .opacity1{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  
 }

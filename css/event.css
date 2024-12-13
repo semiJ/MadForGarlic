@@ -149,7 +149,7 @@
     .eventCard {
         width: 100%;
         height: 100vh;
-        background-color: var(--madColorPalette06);
+        background-color: var(--madColorPalette05);
         position: relative;
     }
 
@@ -224,13 +224,426 @@
 }
 
 @media all and (min-width:768px) and (max-width:1023px) {
-
+           
+    /* eventMainBanner 영역 */
+    
+    #eventMainBanner {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+        }
+    
+        #eventMainBanner .eventBan {
+        width: 100%;
+        height: 100%;
+        background: url(./../img/section/eventmainbanner.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    
+        animation: movescl 4s forwards;
+        }
+    
+        @keyframes movescl {
+        0% {
+            opacity: 0;
+            transform: scale(2);
+        };
+    
+        100% {
+            opacity: 1;
+            transform: scale(1);
+        };
+        }
+    
+        #eventMainBanner .eventTXT {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+    
+            transform: translate(-50%, -50%);
+        }
+    
+        #eventMainBanner .eventTXT h3 {
+            font-size: 5em;
+            text-align: center;
+            letter-spacing: 1rem;
+            color: var(--madColorPalette06);
+    
+            animation: moveToLeft 2s forwards;
+        }
+    
+        #eventMainBanner .eventTXT p {
+            font-size: 1.3em;
+            text-align: center;
+            background-color: var(--madColorPalette03);
+            color: var(--madColorPalette02);
+            padding: 0.2em 0.5em;
+            box-sizing: border-box;
+    
+            animation: moveToRight 2s forwards;
+        }
+    
+        @keyframes moveToLeft {
+            0% {
+            opacity: 0;
+            transform: translateX(-500px);
+            };
+    
+            100% {
+            opacity: 1;
+            transform: translateX(0);
+            };
+        }
+    
+        @keyframes moveToRight {
+        0% {
+            opacity: 0;
+            transform: translateX(500px);
+        };
+    
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        };
+        }
+        
+        /* /eventMainBanner 영역 */
+          
+        /* eventDateil 영역 */
+    
+        #main {
+            width: 100%;
+            overflow: hidden;
+    
+            position: relative;
+        }
+            
+        #eventDateil {
+            width: 100%;
+            height: 60vh;
+            overflow: hidden;
+            padding: 6.4em 3em;
+            box-sizing: border-box;
+        }
+        
+        #eventDateil ol {
+            display: flex;
+            gap: 40px; 
+            transition: transform 2s ease-in-out; 
+        }
+        
+        #eventDateil li {
+            flex-shrink: 0; 
+            position: relative;
+        }
+        
+        #eventDateil li img {
+            width: 35em;
+            transition: 1s;
+            object-fit: cover;
+        }
+    
+        #eventDateil .eveTXT {
+            position: relative;
+        }
+    
+        #eventDateil .eveTXT li img:hover {
+            opacity: 0.5;
+        }
+    
+        /* /eventDateil 영역 */
+    
+        /* eventCard 영역 */
+        .eventCard {
+            width: 100%;
+            height: 100vh;
+            background-color: var(--madColorPalette05);
+            position: relative;
+        }
+    
+        .eventCardImg {
+            display: flex;
+        }
+    
+        .eventCardImg img {
+            width: 20em;
+        }
+    
+        .eventCardImg li {
+            position: absolute;
+            top: 35%;
+            transform: translate(-50%, -50%);
+        }
+    
+        .eventCardImg .eventCardImgLeft {
+            left: 0px;
+        }
+    
+        .eventCardImg .eventCardImgCenter {
+            left: 50%;
+        }
+    
+        .eventCardImg .eventCardImgRight {
+            right: -30%;
+        }
+    
+        .eventCardImg li.view {
+            top: 50%;
+            transition: 2s;
+        }
+    
+        .cardControl {
+            display: flex;
+            justify-content: space-around;
+            font-size: 6em;
+            color: var(--madColorPalette05);
+            transform: translateY(300px);
+            cursor: pointer;
+        }
+    
+        .cardDetail {
+            display: flex;
+        }
+    
+        .cardDetail li {
+            width: 420px;
+            height: 450px;
+            position: absolute;
+            top: 50%;
+            left: 30%;
+            opacity: 0;
+            color: var(--madColorPalette01);
+            padding-top: 2em;
+            box-sizing: border-box;
+        }
+    
+        .cardDetail .cardView {
+            opacity: 1;
+            transition: 1s;
+        }
+    
+        .cardDetail dt {
+            margin-top: 0.8em ;
+            margin-bottom: 0.3em;
+        }
+            
+        /* /eventCard 영역 */
 }
 
 @media all and (min-width:480px) and (max-width:767px) {
-
-}
-
-@media all and (max-width:479px) {
+           
+    /* eventMainBanner 영역 */
     
+    #eventMainBanner {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+        }
+    
+        #eventMainBanner .eventBan {
+        width: 100%;
+        height: 100%;
+        background: url(./../img/section/eventmainbanner.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    
+        animation: movescl 4s forwards;
+        }
+    
+        @keyframes movescl {
+        0% {
+            opacity: 0;
+            transform: scale(2);
+        };
+    
+        100% {
+            opacity: 1;
+            transform: scale(1);
+        };
+        }
+    
+        #eventMainBanner .eventTXT {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+    
+            transform: translate(-50%, -50%);
+        }
+    
+        #eventMainBanner .eventTXT h3 {
+            font-size: 5em;
+            text-align: center;
+            letter-spacing: 1rem;
+            color: var(--madColorPalette06);
+    
+            animation: moveToLeft 2s forwards;
+        }
+    
+        #eventMainBanner .eventTXT p {
+            font-size: 1em;
+            text-align: center;
+            background-color: var(--madColorPalette03);
+            color: var(--madColorPalette02);
+            padding: 0.2em 0.5em;
+            box-sizing: border-box;
+    
+            animation: moveToRight 2s forwards;
+        }
+    
+        @keyframes moveToLeft {
+            0% {
+            opacity: 0;
+            transform: translateX(-500px);
+            };
+    
+            100% {
+            opacity: 1;
+            transform: translateX(0);
+            };
+        }
+    
+        @keyframes moveToRight {
+        0% {
+            opacity: 0;
+            transform: translateX(500px);
+        };
+    
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        };
+        }
+        
+        /* /eventMainBanner 영역 */
+          
+        /* eventDateil 영역 */
+    
+        #main {
+            width: 100%;
+            overflow: hidden;
+    
+            position: relative;
+        }
+            
+        #eventDateil {
+            width: 100%;
+            height: 60vh;
+            overflow: hidden;
+            padding: 5em 3em;
+            box-sizing: border-box;
+        }
+        
+        #eventDateil ol {
+            display: flex;
+            gap: 40px; 
+            transition: transform 2s ease-in-out; 
+        }
+        
+        #eventDateil li {
+            flex-shrink: 0; 
+            position: relative;
+        }
+        
+        #eventDateil li img {
+            width: 40em;
+            object-fit: cover;
+        }
+    
+        #eventDateil .eveTXT {
+            position: relative;
+        }
+    
+        #eventDateil .eveTXT li img:hover {
+            opacity: 0.5;
+        }
+    
+        /* /eventDateil 영역 */
+    
+        /* eventCard 영역 */
+        .eventCard {
+            width: 100%;
+            height: 80vh;
+            background-color: var(--madColorPalette05);
+            position: relative;
+        }
+    
+        .eventCardImg {
+            display: flex;
+        }
+    
+        .eventCardImg img {
+            width: 10em;
+        }
+    
+        .eventCardImg li {
+            position: absolute;
+            top: 20%;
+            transform: translate(-50%, -50%);
+        }
+    
+        .eventCardImg .eventCardImgLeft {
+            left: 0px;
+        }
+    
+        .eventCardImg .eventCardImgCenter {
+            left: 50%;
+        }
+    
+        .eventCardImg .eventCardImgRight {
+            right: -30%;
+        }
+    
+        .eventCardImg li.view {
+            top: 50%;
+            transition: 2s;
+        }
+    
+        .cardControl {
+            display: flex;
+            justify-content: space-around;
+            font-size: 6em;
+            color: var(--madColorPalette05);
+            transform: translateY(120px);
+            cursor: pointer;
+        }
+    
+        .cardDetail {
+            display: flex;
+        }
+    
+        .cardDetail li {
+            width: 420px;
+            height: 450px;
+            position: absolute;
+            top: 30%;
+            left: 10%;
+            opacity: 0;
+            color: var(--madColorPalette01);
+            padding-top: 2em;
+            box-sizing: border-box;
+        }
+    
+        .cardDetail .cardView {
+            opacity: 1;
+            transition: 1s;
+        }
+    
+        .cardDetail dt {
+            margin-top: 0.8em ;
+            margin-bottom: 0.3em;
+        }
+            
+        /* /eventCard 영역 */
 }

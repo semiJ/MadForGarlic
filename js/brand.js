@@ -2,12 +2,18 @@ $(function() {
 
     // brandnews 자동 슬라이드
     let timer = setInterval(function() {
-        $(".brandNewsDetail ul").stop().animate({"margin-top": "-185px"}, 1000, function() {
+        // 화면 크기를 확인하여 모바일 환경인지 확인
+        let isMobile = window.innerWidth <= 767;
+        
+        // 모바일 환경에서는 margin-top을 -225px로, PC 환경에서는 -185px로 설정
+        let marginTopValue = isMobile ? "-225px" : "-185px";
+        
+        $(".brandNewsDetail ul").stop().animate({"margin-top": marginTopValue}, 1000, function() {
             $(".brandNewsDetail li").first().appendTo(".brandNewsDetail ul");
             $(".brandNewsDetail ul").css({"margin-top": "0px"});
         });
     }, 3000);
-
+    
 
     // brandconcept 움직임
 });
