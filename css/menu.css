@@ -14,6 +14,7 @@
 
     #main {
         width: 100%;
+        height: 100%;
         overflow: hidden;
     }
 
@@ -29,7 +30,7 @@
     #menuMainBanner .menuBan {
         width: 100%;
         height: 100%;
-        background: url(./../img/section/banner_img_01.jpg);
+        background: url(./../img/section/brandNewsImg01.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -242,6 +243,7 @@
         height: 4200px;
         margin: 0px auto;
     }
+
     .subMenu.hei {
         height: 5000px;
     }
@@ -265,6 +267,8 @@
         display: block;
         transition: 1s;
     }
+
+    /* pasta 영역 */
 
     .mainPasta {
         width: 100%;
@@ -842,7 +846,316 @@
 }
 
 @media all and (min-width:768px) and (max-width:1023px) {
+    #main {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    /* menuMainBanner 영역 */
+
+    #menuMainBanner {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+    }
+
+    #menuMainBanner .menuBan {
+        width: 100%;
+        height: 100%;
+        background: url(./../img/section/banner_img_01.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        position: absolute;
+        top: 0px;
+        left: 0px;
+
+        animation: movescl 4s forwards;
+    }
+
+    @keyframes movescl {
+    0% {
+        opacity: 0;
+        transform: scale(2);
+    };
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    };
+    }
+
+    #menuMainBanner .menuTXT {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+
+        transform: translate(-50%, -50%);
+    }
+
+    #menuMainBanner .menuTXT h3 {
+        font-size: 5em;
+        text-align: center;
+        letter-spacing: 1rem;
+        color: var(--madColorPalette06);
+
+        animation: moveToLeft 2s forwards;
+    }
+
+    #menuMainBanner .menuTXT p {
+        font-size: 1.3em;
+        text-align: center;
+        background-color: var(--madColorPalette03);
+        color: var(--madColorPalette02);
+        padding: 0.2em 0.5em;
+        box-sizing: border-box;
+
+        animation: moveToRight 2s forwards;
+    }
+
+    @keyframes moveToLeft {
+        0% {
+        opacity: 0;
+        transform: translateX(-500px);
+        };
+
+        100% {
+        opacity: 1;
+        transform: translateX(0);
+        };
+    }
+
+    @keyframes moveToRight {
+        0% {
+            opacity: 0;
+            transform: translateX(500px);
+        };
+
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        };
+    }
     
+    /* /menuMainBanner 영역 */
+
+    .mainMenuImg {
+        width: 100%;
+        height: 50vh;
+        overflow: hidden;
+        margin-top: 2em;
+        /* background-color: var(--madColorPalette04); */
+    }
+
+    .menuBanner {
+        width: 100%;
+        height: 100%;
+
+        position: relative;
+    }
+
+    .menuBanner li {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        opacity: 0;
+        transform: scale(1.2);
+    }
+
+    .menuBanner li.m_on {
+        opacity: 1;
+        transform: scale(1);
+        transition: 1s;
+    }
+
+    .menuBanner li:nth-child(1) {
+        background: url(./../img/section/menu/mainMenu.jpg);
+
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .menuBanner li:nth-child(2) {
+        background: url(./../img/section/menu/setMenu.jpg);
+
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .menuBanner li:nth-child(3) {
+        background: url(./../img/section/menu/dessertMenu.jpg);
+
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .menuBanner li:nth-child(4) {
+        background: url(./../img/section/menu/wineMenu.jpg);
+
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .menuBanner li h3 {
+        position: absolute;
+        left: 40px;
+        top: 45%;
+        font-size: 5em;
+        color: var(--madColorPalette05);
+        transform: translateX(-150%);
+        opacity: 0;
+    }
+
+    .menuBanner h3.menuTitle {
+        transform: translateX(10%);
+        opacity: 1;
+        transition: 2s;
+    }
+
+     /* menu btn 영역 */
+
+     .menuBtn {
+        width: 100%;
+        height: 30%;
+        overflow: hidden;
+    }
+
+    .menuBtnDetail {
+        width: 80%;
+        /* background-color: var(--madColorPalette04); */
+        margin: 30px auto;
+        display: block;
+        padding: 5em 0px;
+    }
+
+    .menuBtn ol {
+        display: flex;
+        justify-content: center;
+    }
+
+    .menuBtnDetail li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .menuBtnDetail li img {
+        max-width: 30%;
+    }
+    
+    .menuBtnDetail li a {
+        width: 100%;
+        height: 100%;
+        margin-top: 10px;
+        font-size: 2em;
+        display: block;
+    }
+
+    .menuBtnDetail li.m_btn {
+        color: var(--madColorPalette06);
+        transition: 1s;
+        transform: rotateY(360deg);
+    }
+
+    .subMenu {
+        display: none;
+        position: absolute;
+        z-index: -20;
+    }
+
+    /* /menu btn 영역 */
+
+    /* submenu 영역 */
+    .subMenu {
+        width: 100%;
+        height: 4200px;
+        margin: 0px auto;
+    }
+
+    .subMenu.hei {
+        height: 5000px;
+    }
+
+    .mainMenuList {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    .mainMenuList > li {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        display: none;
+    }
+
+    .mainMenuList > li {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        display: none;
+    }
+
+    .mainMenuList > li.s_on {
+        display: block;
+        transition: 1s;
+    }
+
+    /* /submenu 영역 */
+
+    /* pasta 영역 */
+
+    .mainPasta {
+        width: 100%;
+        position: relative;
+    }
+
+    .mainPastaImg {
+        width: 100%;
+        height: 30vh;
+        
+        background: url(./../img/section/menu/mainmenu_pasta.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .mainPasta .mainPastaTxT {
+        width: 50em;
+        max-width: 50%;
+        height: 20em;
+        line-height: 1.5em;
+        background-color: var(--madColorPalette02);
+        color: var(--madColorPalette06);
+        padding: 6em 5em;
+        box-sizing: border-box;
+        
+        position: absolute;
+        left: 5%;
+        top: 40%;
+    }
+
+    .mainPasta .mainPastaTxT h3 {
+        font-size: 2em;
+        margin-bottom: 1em;
+    }
+
 }
 
 @media all and (min-width:480px) and (max-width:767px) {
