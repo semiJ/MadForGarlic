@@ -436,7 +436,7 @@
         /* /eventCard 영역 */
 }
 
-@media all and (min-width:480px) and (max-width:767px) {
+@media all and (min-width:360px) and (max-width:767px) {
            
     /* eventMainBanner 영역 */
     

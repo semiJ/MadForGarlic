@@ -393,9 +393,8 @@
         color: var(--madColorPalette06);
     }
 
-    .viewControl {
+    .subBack.viewControl {
         display: block;
-        transition: 1s;
     }
     /* /submenu */
 
@@ -410,7 +409,7 @@
         position: relative;
         top: 0px;
         cursor: pointer;
-        z-index: 120;
+        z-index: 300;
     }
 
     .bar01 {
@@ -694,7 +693,7 @@
         color: var(--madColorPalette06);
     }
 
-    .viewControl {
+    .subBack.viewControl {
         display: block;
     }
     /* /submenu */
@@ -710,7 +709,7 @@
         position: relative;
         top: 0px;
         cursor: pointer;
-        z-index: 100;
+        z-index: 300;
     }
 
     .bar01 {
@@ -989,9 +988,8 @@
         color: var(--madColorPalette06);
     }
 
-    .viewControl {
+    .subBack.viewControl {
         display: block;
-        transition: 1s;
     }
     /* /submenu */
 
@@ -1006,7 +1004,7 @@
         position: relative;
         top: 5px;
         cursor: pointer;
-        z-index: 100;
+        z-index: 300;
     }
 
     .bar01 {

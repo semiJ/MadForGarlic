@@ -361,7 +361,7 @@
     /* /brandconcept 영역 */
 }
 
-@media all and (min-width:480px) and (max-width:767px) {
+@media all and (min-width:360px) and (max-width:767px) {
     #main {
         overflow: hidden;
     }

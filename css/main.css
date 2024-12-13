@@ -105,24 +105,6 @@
         color: var(--madColorPalette04);
     }
 
-    #banner .floaing {
-        width: 70px;
-        height: 30px;
-        position: fixed;
-        right: 22px;
-        top: 40px;
-        background-color: var(--madColorPalette06sub);
-        border-radius: 10px;
-        padding: 1rem;
-        color: var(--madColorPalette06);
-        z-index: 200;
-        display: block;
-        text-align: right;
-        line-height: 4px;
-
-        animation: btnani 2s linear infinite;
-    }
-
     @keyframes btnani {
         0% {
            transform: translateY(0);
@@ -135,10 +117,6 @@
         100% {
             transform: translateY(0px);
         }
-    }
-
-    #banner .floaing.on {
-        display: none;
     }
     /* /banner 영역 */
     /* mainMenu */
@@ -569,41 +547,6 @@
         color: var(--madColorPalette04);
     }
 
-    #banner .floaing {
-        width: 70px;
-        height: 30px;
-        position: fixed;
-        right: 54px;
-        top: 40px;
-        background-color: var(--madColorPalette06sub);
-        border-radius: 10px;
-        padding: 1rem;
-        color: var(--madColorPalette06);
-        z-index: 200;
-        display: block;
-        text-align: right;
-        line-height: 4px;
-
-        animation: btnani 2s linear infinite;
-    }
-
-    @keyframes btnani {
-        0% {
-           transform: translateY(0);
-        }
-
-        50% {
-            transform: translateY(10px);
-        }
-
-        100% {
-            transform: translateY(0px);
-        }
-    }
-
-    #banner .floaing.rmv {
-        display: none;
-    }
 
     /* /banner 영역 */
 
@@ -1016,42 +959,6 @@
         color: var(--madColorPalette04);
     }
 
-    #banner .floaing {
-        width: 70px;
-        height: 30px;
-        position: fixed;
-        right: 54px;
-        top: 40px;
-        background-color: var(--madColorPalette06sub);
-        border-radius: 10px;
-        padding: 1rem;
-        color: var(--madColorPalette06);
-        z-index: 200;
-        display: block;
-        text-align: right;
-        line-height: 4px;
-
-        animation: btnani 2s linear infinite;
-    }
-
-    @keyframes btnani {
-        0% {
-           transform: translateY(0);
-        }
-
-        50% {
-            transform: translateY(10px);
-        }
-
-        100% {
-            transform: translateY(0px);
-        }
-    }
-
-    #banner .floaing.rmv {
-        display: none;
-    }
-
     /* /banner 영역 */
 
     /* mainMenu */
@@ -1462,42 +1369,6 @@
         font-size: 2.5rem;
         right: 5px;
         color: var(--madColorPalette04);
-    }
-
-    #banner .floaing {
-        width: 70px;
-        height: 30px;
-        position: fixed;
-        right: 54px;
-        top: 40px;
-        background-color: var(--madColorPalette06sub);
-        border-radius: 10px;
-        padding: 1rem;
-        color: var(--madColorPalette06);
-        z-index: 200;
-        display: block;
-        text-align: right;
-        line-height: 4px;
-
-        animation: btnani 2s linear infinite;
-    }
-
-    @keyframes btnani {
-        0% {
-           transform: translateY(0);
-        }
-
-        50% {
-            transform: translateY(10px);
-        }
-
-        100% {
-            transform: translateY(0px);
-        }
-    }
-
-    #banner .floaing.rmv {
-        display: none;
     }
 
     /* /banner 영역 */

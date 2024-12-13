@@ -339,7 +339,7 @@
 
 }
 
-@media all and (min-width:480px) and (max-width:767px) {
+@media all and (min-width:360px) and (max-width:767px) {
   #main {
     width: 100%;
   }

@@ -21,15 +21,23 @@ a {
     text-decoration: inherit;
 }
 
-h2, h3, h4 {
+h2,
+h3,
+h4 {
     font-family:'DNFForgedBlade';
     font-style:normal;font-weight:700;
 }
 
-dt, ul, ol, div {
+dt,
+ul,
+ol,
+div {
     font-family:'DNFForgedBlade';font-style:normal;font-weight:500;
 }
-p, span, dd {
+
+p,
+span,
+dd {
     font-family:'DNFForgedBlade';font-style:normal;font-weight:300;
 }
 
@@ -96,13 +104,8 @@ html .h_hide {
 
 }
 
-@media all and (min-width:480px) and (max-width:767px) {
+@media all and (min-width:360px) and (max-width:767px) {
 
 }
-
-@media all and (max-width:479px) {
-    
-}
-
 
 */
