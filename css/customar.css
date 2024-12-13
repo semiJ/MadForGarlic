@@ -104,6 +104,55 @@
     }
     
     /* /customarBanner 영역 */
+    
+    /* customerBtn 영역 */
+
+    #customerBtn {
+        width: 100%;
+        height: 30%;
+        overflow: hidden;
+        background-color: var(--madColorPalette05);
+    }
+
+    .customerDetailBtn {
+        width: 80%;
+        /* background-color: var(--madColorPalette04); */
+        margin: 30px auto;
+        display: block;
+        padding: 5em 0px;
+    }
+
+    #customerBtn .customerDetailBtn {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .customerDetailBtn li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .customerDetailBtn li img {
+        max-width: 50%;
+    }
+    
+    .customerDetailBtn li a {
+        width: 100%;
+        height: 100%;
+        margin-top: 10px;
+        font-size: 2em;
+        display: block;
+    }
+
+    .customerDetailBtn li.m_btn {
+        color: var(--madColorPalette06);
+        transition: 1s;
+        transform: rotateY(360deg);
+    }
+    
+    /* /customerBtn 영역 */
 }
 
 @media all and (min-width:768px) and (max-width:1023px) {
