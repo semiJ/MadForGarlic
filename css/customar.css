@@ -160,5 +160,146 @@
 }
 
 @media all and (min-width:360px) and (max-width:767px) {
+    #main {
+        width: 100%;
+    }
 
+    /* customarBanner 영역 */
+
+    #customerMainBanner {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+    }
+
+    #customerMainBanner .customerBan {
+        width: 100%;
+        height: 100%;
+        background: url(./../img/section/customerbanner.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        position: absolute;
+        top: 0px;
+        left: 0px;
+
+        animation: movescl 4s forwards;
+    }
+
+    @keyframes movescl {
+    0% {
+        opacity: 0;
+        transform: scale(2);
+    };
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    };
+    }
+
+    #customerMainBanner .customerTXT {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+
+        transform: translate(-50%, -50%);
+    }
+
+    #customerMainBanner .customerTXT h3 {
+        font-size: 3.5em;
+        text-align: center;
+        letter-spacing: 1rem;
+        color: var(--madColorPalette06);
+
+        animation: moveToLeft 2s forwards;
+    }
+
+    #customerMainBanner .customerTXT p {
+        font-size: 1em;
+        text-align: center;
+        background-color: var(--madColorPalette03);
+        color: var(--madColorPalette02);
+        padding: 0.2em 0.5em;
+        box-sizing: border-box;
+
+        animation: moveToRight 2s forwards;
+    }
+
+    @keyframes moveToLeft {
+        0% {
+        opacity: 0;
+        transform: translateX(-500px);
+        };
+
+        100% {
+        opacity: 1;
+        transform: translateX(0);
+        };
+    }
+
+    @keyframes moveToRight {
+        0% {
+            opacity: 0;
+            transform: translateX(500px);
+        };
+
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        };
+    }
+    
+    /* /customarBanner 영역 */
+    
+    /* customerBtn 영역 */
+
+    #customerBtn {
+        width: 100%;
+        height: 30%;
+        overflow: hidden;
+        background-color: var(--madColorPalette05);
+    }
+
+    .customerDetailBtn {
+        width: 80%;
+        /* background-color: var(--madColorPalette04); */
+        margin: 30px auto;
+        display: block;
+        padding: 5em 0px;
+    }
+
+    #customerBtn .customerDetailBtn {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .customerDetailBtn li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .customerDetailBtn li img {
+        max-width: 50%;
+    }
+    
+    .customerDetailBtn li a {
+        width: 100%;
+        height: 100%;
+        margin-top: 10px;
+        font-size: 2em;
+        display: block;
+    }
+
+    .customerDetailBtn li.m_btn {
+        color: var(--madColorPalette06);
+        transition: 1s;
+        transform: rotateY(360deg);
+    }
+    
+    /* /customerBtn 영역 */
 }
