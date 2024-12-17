@@ -19,7 +19,7 @@
 
     #customerMainBanner {
         width: 100%;
-        height: 100vh;
+        height: 50vh;
         position: relative;
         overflow: hidden;
     }
@@ -111,7 +111,7 @@
         width: 100%;
         height: 30%;
         overflow: hidden;
-        background-color: var(--madColorPalette05);
+        /* background-color: var(--madColorPalette05); */
     }
 
     .customerDetailBtn {
@@ -119,7 +119,7 @@
         /* background-color: var(--madColorPalette04); */
         margin: 30px auto;
         display: block;
-        padding: 5em 0px;
+        padding: 2em 0px;
     }
 
     #customerBtn .customerDetailBtn {
@@ -153,6 +153,8 @@
     }
     
     /* /customerBtn 영역 */
+
+    
 }
 
 @media all and (min-width:768px) and (max-width:1023px) {
@@ -164,7 +166,7 @@
 
     #customerMainBanner {
         width: 100%;
-        height: 100vh;
+        height: 50vh;
         position: relative;
         overflow: hidden;
     }
@@ -256,7 +258,7 @@
         width: 100%;
         height: 30%;
         overflow: hidden;
-        background-color: var(--madColorPalette05);
+        /* background-color: var(--madColorPalette05); */
     }
 
     .customerDetailBtn {
@@ -298,6 +300,23 @@
     }
     
     /* /customerBtn 영역 */
+
+    /* customerPageNum 영역 */
+
+    .customerPageNum {
+        display: flex;
+        justify-content: center;
+    }
+
+    .customerPageNum li {
+        margin: 0px 1rem;
+    }
+
+    .customerPageNum .numOne {
+        color: var(--madColorPalette06);
+    }
+    
+    /* /customerPageNum 영역*/
 }
 
 @media all and (min-width:360px) and (max-width:767px) {
@@ -309,7 +328,7 @@
 
     #customerMainBanner {
         width: 100%;
-        height: 100vh;
+        height: 50vh;
         position: relative;
         overflow: hidden;
     }
@@ -401,7 +420,7 @@
         width: 100%;
         height: 30%;
         overflow: hidden;
-        background-color: var(--madColorPalette05);
+        /* background-color: var(--madColorPalette05); */
     }
 
     .customerDetailBtn {
@@ -443,4 +462,21 @@
     }
     
     /* /customerBtn 영역 */
-}
+
+    /* customerPageNum 영역 */
+
+    .customerPageNum {
+        display: flex;
+        justify-content: center;
+    }
+
+    .customerPageNum li {
+        margin: 0px 1rem;
+    }
+
+    .customerPageNum .numOne {
+        color: var(--madColorPalette06);
+    }
+    
+    /* /customerPageNum 영역*/
+}                         

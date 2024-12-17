@@ -25,20 +25,24 @@ h2,
 h3,
 h4 {
     font-family:'DNFForgedBlade';
-    font-style:normal;font-weight:700;
+    font-style:normal;
+    font-weight:700;
 }
 
 dt,
 ul,
 ol,
 div {
-    font-family:'DNFForgedBlade';font-style:normal;font-weight:500;
+    font-family:'DNFForgedBlade';
+    font-style:normal;
+    font-weight:500;
 }
 
 p,
 span,
 dd {
-    font-family:'DNFForgedBlade';font-style:normal;font-weight:300;
+    font-family:'DNFForgedBlade';
+    font-style:normal;font-weight:300;
 }
 
 html {
