@@ -47,17 +47,17 @@
         box-sizing: border-box;
         color: var(--madColorPalette01);
         line-height: 30px;
-        background-color: var(--madColorPalette02);
     }
     
     .brandNewsDetail {
-        width: 100%;
+        width: 80%;
         height: 185px;
         background-color: var(--madColorPalette01);
         padding-left: 2rem;
         box-sizing: border-box;
         transform: translateY(50%);
         overflow: hidden;
+        margin: 0px auto;
     }
 
     .brandNewsDetail li {
@@ -223,17 +223,18 @@
         box-sizing: border-box;
         color: var(--madColorPalette01);
         line-height: 30px;
-        background-color: var(--madColorPalette02);
+        /* background-color: var(--madColorPalette02); */
     }
     
     .brandNewsDetail {
-        width: 100%;
+        width: 80%;
         height: 185px;
         background-color: var(--madColorPalette01);
         padding-left: 2rem;
         box-sizing: border-box;
         transform: translateY(50%);
         overflow: hidden;
+        margin: 0px auto;
     }
 
     .brandNewsDetail li {
@@ -398,16 +399,17 @@
         box-sizing: border-box;
         color: var(--madColorPalette01);
         line-height: 30px;
-        background-color: var(--madColorPalette02);
+        /* background-color: var(--madColorPalette02); */
     }
     
     .brandNewsDetail {
-        width: 100%;
+        width: 80%;
         height: 225px;
         background-color: var(--madColorPalette01);
         padding-left: 1rem;
         box-sizing: border-box;
         overflow: hidden;
+        margin: 0px auto;
     }
 
     .brandNewsDetail a {

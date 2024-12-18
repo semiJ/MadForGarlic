@@ -396,6 +396,14 @@
     .subBack.viewControl {
         display: block;
     }
+
+    header .subBack .rsvt {
+        background-color: var(--madColorPalette06);
+        border-radius: 20px;
+        color: var(--madColorPalette01);
+        padding: 1rem;
+        box-sizing: border-box;
+    }
     /* /submenu */
 
     /* /scroll 영역 */
@@ -696,6 +704,14 @@
     .subBack.viewControl {
         display: block;
     }
+
+    header .subBack .rsvt {
+        background-color: var(--madColorPalette06);
+        border-radius: 20px;
+        color: var(--madColorPalette01);
+        padding: 1rem;
+        box-sizing: border-box;
+    }
     /* /submenu */
 
     /* /scroll 영역 */
@@ -991,6 +1007,15 @@
     .subBack.viewControl {
         display: block;
     }
+
+    header .subBack .rsvt {
+        background-color: var(--madColorPalette06);
+        border-radius: 20px;
+        color: var(--madColorPalette01);
+        padding: 1rem;
+        box-sizing: border-box;
+    }
+    
     /* /submenu */
 
     /* /scroll 영역 */
