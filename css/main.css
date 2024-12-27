@@ -391,61 +391,62 @@
     /* /mainLocation 영역 */
 
     /* mainMembership 영역 */
-        #mainMembership {
-            width: 100%;
-            height: 70vh;
-            padding: 5em 2em;
-            box-sizing: border-box;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            overflow: hidden;
+    #mainMembership {
+        width: 100%;
+        height: 70vh;
+        padding: 5em 2em;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
 
-            background: url(./../img/section/viproom.jpg);
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-        }
+        background: url(./../img/section/viproom.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
 
-        .membershipBenefit {
-            display: flex;
-            justify-content: center;
-            gap: 150px;
-            text-align: center;
-            align-items: center;
-        }
+    .membershipBenefit {
+        display: flex;
+        justify-content: center;
+        gap: 150px;
+        text-align: center;
+        align-items: center;
+    }
 
-        .membershipBenefit li:hover {
-            transform: scale(0.8);
-            transition: 0.8s;
-        }
+    .membershipBenefit li {
+        transform: translateY(500%);
+        opacity: 0;
+        transition: transform 1s, opacity 1s; /* 슬라이드와 페이드 효과 */
+    }
 
-        .membershipBenefit li h3 {
-            font-size: 3em;
-            color: var(--madColorPalette06);
-            margin: 1rem 0px;
-        }
+    .membershipBenefit li.memveiw {
+        transform: translateY(0%);
+        opacity: 1;
+    }
 
-        .membershipBenefit li p {
-            font-size: 1.5em;
-            color: var(--madColorPalette01);
-        }
+    .membershipBenefit li:hover {
+        transform: scale(0.8);
+        transition: 0.8s;
+    }
 
-        .membershipBenefit img {
-            width: 20em;
-            object-fit: cover;
-        }
+    .membershipBenefit li h3 {
+        font-size: 3em;
+        color: var(--madColorPalette06);
+        margin: 1rem 0px;
+    }
 
-        .membershipBenefit li {
-            transform: translateY(500%);
-        }
+    .membershipBenefit li p {
+        font-size: 1.5em;
+        color: var(--madColorPalette01);
+    }
 
-        .membershipBenefit li.memveiw {
-            transform: translateY(0%);
-            transition: 2s;
-        }
-
+    .membershipBenefit img {
+        width: 20em;
+        object-fit: cover;
+    }
 
     /* /mainMembership 영역 */
 

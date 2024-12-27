@@ -1,5 +1,5 @@
 $(function(){
-    let baseline = -600;
+    let baseline = -800;
 
     let mainMember = $("#mainMembership").offset().top + baseline;
 
@@ -145,14 +145,24 @@ $(function(){
 
         //멤버쉽 하나씩
 
-        $(window).on("scroll", function(){
-            let memtop = $(this).scrollTop();
-            console.log(memtop);
+        $(document).ready(function() {
+            let mainMember = $('#mainMembership').offset().top;
+            
+            $(window).on("scroll", function() {
+                let memtop = $(this).scrollTop();
+                console.log(memtop);
 
-            if(memtop >= mainMember) {
-                $(".membershipBenefit li").addClass("memveiw");
-            } else {
-                $(".membershipBenefit li").removeClass("memveiw");
-            };
+                if (memtop >= mainMember) {
+                    $(".membershipBenefit li").each(function(index) {
+                        $(this).delay(index * 500).queue(function(next) { 
+                            $(this).addClass("memveiw");
+                            next(); 
+                        });
+                    });
+                } else {
+                    $(".membershipBenefit li").removeClass("memveiw");
+                }
+            });
         });
+        
 })
