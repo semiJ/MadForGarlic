@@ -154,6 +154,16 @@
     
     /* /customerBtn 영역 */
 
+    #customerDetail {
+        width: 40%;
+        margin: 0px auto;
+    }
+
+    #customerDetail .noticeDetail {
+        display: flex;
+        justify-content: space-between;
+    }
+
     
 }
 

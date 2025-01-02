@@ -1,7 +1,6 @@
 $(function(){
-    let baseline = -800;
 
-    let mainMember = $("#mainMembership").offset().top + baseline;
+    let mainMember = $("#mainMembership").offset().top;
 
     //banner 이미지 자동 슬라이드
 
