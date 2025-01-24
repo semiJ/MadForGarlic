@@ -44,6 +44,10 @@
         transform: scale(1.2);
     }
 
+    .bannerPanel li:nth-child(1) {
+        opacity: 1;
+    }
+
     .bannerPanel li.view {
         opacity: 1;
         transform: scale(1);
