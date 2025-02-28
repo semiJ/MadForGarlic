@@ -157,6 +157,7 @@
     #customerDetail {
         width: 40%;
         margin: 0px auto;
+        display: none;
     }
 
     #customerDetail .noticeDetail {
